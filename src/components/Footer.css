@@ -1,0 +1,81 @@
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 0;
+  background-color: var(--colourBackWhite);
+  color: var(--colourTextGrey);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.WavesFooterIMG {
+  width: 100%;
+  margin-bottom: 0px;
+  box-shadow: 0 4px 2px -2px white;
+}
+
+.footerTop {
+  width: 100%;
+  vertical-align: top;
+  margin-left: 10%;
+  margin-right: 10%;
+  box-shadow: inset 0 0 10px 10px var(--colourBackWhite);
+
+}
+
+.footerTitle {
+  font-size: 1.2rem;
+}
+
+.socialIcon {
+  width: 50px;;
+  height: 50px;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.socialIcon:hover {
+  margin-top: 0;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.footerClickableIcons:hover {
+  text-decoration: none;
+}
+
+.footerLinks {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  color: var(--colourPop);
+  align-items: center;
+  align-self: center;
+}
+
+.footerLinksA:hover {
+  text-decoration: none;
+  color: var(--colourPop)
+}
+
+.footerLinksA {
+  text-decoration: none;
+  color: var(--colourTextGrey);
+}
+
+.footerBottomText{
+  margin-top: 2%;
+  font-size: 0.8rem;
+}

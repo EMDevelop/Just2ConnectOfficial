@@ -1,0 +1,744 @@
+
+/* ----------------------------------------------------------------- */
+
+/* Main Banner */
+
+/* ----------------------------------------------------------------- */
+
+.MainBanner-container {
+  min-height: 100vh;
+  height: fit-content;
+  width: 100%;
+  background: transparent;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.HeroImage {
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.Hero_Stock_Image {
+  align-items: center;
+  justify-content: center;
+  /* width: 100%; */
+  width: 450px;
+}
+
+@media screen and (max-width: 500px) {
+  .Hero_Stock_Image {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+  .Hero_Stock_Image {
+    width: 400px;
+  }
+}
+
+.titlewrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  padding-top: 10%;
+}
+
+.HeroSlogan {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--colourTextDark);
+  padding-left: 5%;
+  padding-right: 5%;
+  min-height: 300px;
+  padding-bottom: 20%;
+}
+
+.HeroCompanySlogan{
+  letter-spacing: 3px;
+  /* font-size: 1rem; */
+  font-size: 2vh;
+  font-weight: bold;
+  text-align: left;
+  color: var(--colourPop);
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.Slogan {
+  letter-spacing: 2px;
+  /* font-size: 3.2rem; */
+  font-size: 5.5vh;
+  font-weight: normal;
+  text-align: left; 
+}
+
+.Slogan b {
+  font-weight: bold;
+  font-size: 5.5vh;
+}
+
+.SloganDescription {
+  padding-top: 30px;
+  letter-spacing: 1px;
+  /* font-size: 1.5rem; */
+  font-size: 3vh;
+  text-align: left;
+  font-weight: normal;
+}
+
+.homeTopForm {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: inherit;
+  background-color: none;
+}
+
+.homeRightSection {
+  width: 33%;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* Our Services */
+
+/* ----------------------------------------------------------------- */
+
+.OurServices-container {
+  width: 80%;
+  color: var(--colourTextGrey);
+  height: max-content;
+  min-height: 600px;
+  
+  border-radius: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  margin-bottom: 10%;
+}
+
+.OurServicesTitle {
+  font-size: 2.25rem;
+  /* font-size: 4.5vh; */
+  color: var(--colourTextDark);
+  text-align: center;
+  letter-spacing: 1px;
+  padding-bottom: 5%;
+  padding-top: 2%;
+}
+
+.outerGrid {
+  width: 100%;
+  margin: 0px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.ServicesContainerOuter{
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 400px;
+
+}
+
+.servicesIcon {
+
+  background-color: transparent;
+  backdrop-filter: blur(1.5px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 150px;
+  transition: top ease 0.5s;
+  position: relative;
+  top: 0;
+}
+
+
+.servicesIcon:hover{
+  top: -10px !important;
+}
+
+.ServicesIMG {
+  max-height: 80px;
+  width: auto;
+}
+
+
+.ServicesTitle {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* max-width: 200px; */
+  height: 100px;
+}
+
+.ServicesDescription {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 90px;
+  /* background-color: red; */
+}
+
+
+.whyJ2C-container {
+  background: transparent;
+  color: var(--colourTextGrey);
+}
+
+.outServicesHeader {
+  font-size: 1.5rem;
+  /* font-size: 3.8vh; */
+  padding-top: 5%;
+  color: var(--colourTextGrey);
+  font-style: normal;
+
+}
+
+.ourServicesDescription {
+  font-size: 1rem;
+  /* font-size: 2.5vh; */
+  padding-top: 5%;
+  color: var(--colourTextGrey);
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.ourServicesDescription b{
+  font-size: 1rem;
+  /* font-size: 2.5vh; */
+  padding-top: 5%;
+  color: var(--colourPop);
+  font-style: normal;
+}
+
+.learnMoreButton {
+  color: var(--colourTextGrey);
+  font-size: 0.7rem;
+  /* font-size: 1.5vh; */
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: var(--colourBackLilac);
+  padding: 5px 15px;
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 5px #cdd3e0;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(1px);  
+  margin-top: 10%;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  display: flex;
+  vertical-align: center;
+  align-items: center;
+  height: 30px;
+  width: 120px;
+}
+.learnMoreText{
+  transform: translate(0,10px);
+}
+
+
+.learnMoreButton:hover {
+  transform: translate(0,-5px);
+  text-decoration: none;
+  color: var(--colourPop);
+}
+
+
+
+/* ----------------------------------------------------------------- */
+
+/* Why J2C */
+
+/* ----------------------------------------------------------------- */
+
+.whyJ2C-container {
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(1.5px);
+  opacity: 0.9;
+  height: fit-content;
+  box-shadow: 1px 1px 13px 10px #D6DEF0;
+  padding-bottom: 100px;
+  border-radius: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.WhyJ2CTitle {
+  font-size: 2.25rem;
+  color: var(--colourTextDark);
+  text-align: center;
+  padding-top: 100px;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+
+.benefitContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: transparent;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.illustrationContainer{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 200px;
+}
+
+.whyJ2CIllustrations {
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 20px;
+}
+
+.benefitTitleContainer{
+  flex: 0.5;
+  vertical-align: top;
+}
+
+.BenefitTitle {
+  font-size: 1.75rem;
+  color: var(--colourTextGrey);
+  background: transparent;
+  letter-spacing: 0.5px;
+}
+
+.benefitTitleContainer{
+  flex: 4;
+  vertical-align: top;
+}
+
+.BenefitDescription {
+  font-size: 1.25rem;
+  color: var(--colourTextGrey);
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.benefitDescriptionContainer {
+  flex: 4;
+}
+
+.Benefit:hover {
+  color: var(--colourPop);
+}
+
+.BenefitDescription:hover {
+  color: var(--colourPop);
+}
+
+
+
+/* ----------------------------------------------------------------- */
+
+/* Welcome To Just2Connect */
+
+/* ----------------------------------------------------------------- */
+
+.AboutContainer {
+  width: 100%;
+  min-height: 700px;
+  height: fit-content;
+  box-shadow: 1px 1px 13px 10px #D6DEF0;
+  background-color: rgba(255, 255, 255, 0.486);
+  backdrop-filter: blur(1px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.aboutTextConainer{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  vertical-align: middle;
+  text-align: left;
+  margin: auto;
+}
+
+.AboutUsImages {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.aboutHeading1 {
+  font-size: 2.2rem;
+  /* font-weight: bold; */
+  color: var(--colourTextDark);
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.aboutHeading2 {
+  font-size: 1.6rem;
+  /* font-weight: bold; */
+  color: var(--colourTextDark);
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.aboutParagraph {
+  font-size: 1.4rem;
+  color: var(--colourTextGrey);
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.ContactBoldLink{
+  padding-right: 5px;
+  color: var(--colourPop);
+  text-decoration: underline;     
+
+}
+
+.aboutParagraph b {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e51a94;
+  
+}
+
+.AboutUsIMGOne {
+  padding-left: 10%;
+  padding-right: 10%;
+  max-width: 100%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+.AboutUsIMGTwo {
+  padding-left: 10%;
+  padding-right: 10%;
+  max-width: 100%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+
+
+@media screen and (max-width: 959px) {
+.AboutUsIMGOne {
+  display: none;
+}
+}
+
+
+/* ----------------------------------------------------------------- */
+
+/* Trusted By */
+
+/* ----------------------------------------------------------------- */
+
+.TrustedBy-container {
+  height: fit-content;
+  padding-bottom: 100px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.trustedByTitle {
+  font-size: 2.25rem;
+  color: var(--colourTextDark);
+  text-align: center;
+  padding-top: 100px;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+
+.carousel{
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.testimonialContainer {
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(1.5px);
+  height: fit-content;
+  min-height: 500px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 480px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom:30px;
+  outline: none;
+  box-shadow: 1px 1px 13px 10px #D6DEF0;
+
+}
+
+
+.StarConainer{
+  flex: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.FiveStar {
+  height: 37px;
+  width: auto;
+  /* color: var(--colourTextDark) */
+}
+
+
+.QuotationContainer {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 5;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.attributionContainer{
+  width: 100%;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40%;
+}
+
+.Quote {
+  color: var(--colourTextDark);
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  white-space: wrap;
+  overflow: hidden;
+  font-size: 25px;
+  text-align: center;
+  font-style: italic;
+}
+
+.Quote b{
+  color: var(--colourPop);
+  font-weight: normal;
+}
+
+.leftQuote {
+  color: var(--colourPop);
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  width: 100%;
+  font-size: 20px;
+}
+
+.rightQuote {
+  color: var(--colourPop);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  font-size: 20px;
+}
+
+.QuoteIcon{
+  color: var(--colourPop);
+}
+
+.Blanc {
+  white-space: wrap;
+  overflow: hidden;
+  padding-left: 30px;
+  color: transparent;
+}
+
+.Name {
+  color: var(--colourTextDark);
+
+}
+
+.Company {
+  color: var(--colourTextGrey);
+  padding-bottom: 20px;
+
+}
+
+
+.rec.rec-arrow{
+  border-radius: 50%;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  color: var(--colourPop);
+  outline: none;
+  height: 50px;
+  outline: none !important;
+  border: none !important;
+  background-color: transparent;
+  backdrop-filter: blur(1.5px);
+  box-shadow: inset 0 0 1px 1px var(--colourPop);
+}
+
+.rec.rec-arrow-left{
+   padding-top: 6px;
+  padding-right: 4px;
+}
+
+.rec.rec-arrow-right{
+  padding-top: 6px;
+  padding-left: 4px;
+}
+
+.rec.rec-arrow:hover{
+  background-color:  var(--colourPop) !important;
+
+}
+
+.rec.rec-arrow:active{
+  background-color:  var(--colourPop) !important;
+
+}
+.rec.rec-arrow:focus{
+  background-color:  var(--colourPop) !important;
+
+}
+.rec.rec-arrow:disabled{
+  background-color: transparent !important;
+  color: transparent !important;
+  box-shadow: none  !important;
+
+}
+
+@media screen and (max-width: 530px) {
+
+  .rec.rec-arrow{
+    display: none !important;
+      
+  }
+
+
+}
+
+@media screen and (max-width: 450px) {
+
+  
+    .testimonialContainer{
+
+      width: 90% i !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+    }
+}
+
+
+
+.rec.rec-dot {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: transparent;    
+  box-shadow: inset 0 0 1px 1px var(--colourPop);
+}
+
+.rec.rec-dot_active {
+  outline: none;
+  border: none;
+  background-color: var(--colourPop);
+  color: transparent;
+
+  box-shadow:none;
+
+}
+
+/* --------------------------- */
+/* .titleDiv  */
+/* --------------------------- */
+
+.transparentSection {
+
+  background-color: transparent;
+  height: 150px;
+
+}
+
+.HomeContactUs {
+  width: 100%;
+  height: 100vh;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: transparent;
+  justify-content: center;
+  background-image: url(/src/images/icons/contactBlob.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 700px) {
+  .HomeContactUs {
+  background-image: none;
+  }
+}
+
+

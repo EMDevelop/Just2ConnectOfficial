@@ -1,0 +1,333 @@
+/* Hero? */
+.ContactHero {
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  color: var(--colourTextBlue);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.ContactHeroText {
+
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--colourTextDark);
+  text-align: left;
+
+}
+
+.ContactHeroTextSmall {
+  padding-top: 30px;
+
+  font-size: 1.5rem;
+  color: var(--colourTextGrey);
+  text-align: left;
+
+}
+
+/*-------------------------- New Contact us--------------------------------- */
+
+.ContactFormContainer {
+  width: 80%;
+  min-height: 90vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 40px;
+  margin-bottom: 15%;
+  background-color: rgba(255, 255, 255, .5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: var(--colourTextGrey);
+  box-shadow: 1px 1px 13px 10px #D6DEF0;
+
+}
+
+
+.contactIllustrationIMG {
+  width: 50%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.companyContactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.contactItem{
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+
+  width: 90%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.icon{
+ flex: 2;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.mainText{
+  flex: 5;
+  margin-left: 50px;
+}
+
+.AddressText{
+  font-size: 1rem;
+  font-style: normal; 
+  margin-top: -5%;}
+
+
+@media screen and (max-width: 960px) {
+.AddressText {
+  margin-top: -2%;
+}
+}
+
+.ContactText{
+  font-size: 1rem;
+  font-style: normal; 
+}
+
+
+.ContactText1{
+  font-size: 1rem;
+  font-style: normal; 
+}
+
+.ContactLine{
+  height: 70vh;
+  width: 2px;
+  background-color: var(--colourPop);
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+
+.ContactIcon{
+  max-height: 30px;
+  width: auto;
+}
+
+.ContactIcon1{
+  max-height: 30px;
+  width: auto;
+}
+
+@media screen and (max-width: 370px) {
+  .ContactIcon1{
+    display: none;
+  }
+
+  .ContactText1{
+    display: none;
+  }
+
+}
+
+
+
+.emailUsText{
+  color: var(--colourPop);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.ContactInput{
+  height: 50px;
+  width: 85%;
+  border-radius: 5px;
+  font-size: 20px;
+  padding-left: 20px;
+  color: var(--colourPop);
+  text-decoration: none !important;
+  outline: none !important;
+  border-width:0px;
+  border:none;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+
+}
+
+.ContactTextInput{
+  font-size: 20px;
+  width: 85%;
+  height: 100px;
+  max-height: 150px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-top: 10px;
+  color: var(--colourPop);
+  outline: none !important;
+  border-width:0px;
+  border:none;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+.ContactButton {
+  color: var(--colourBackWhite);
+  font-size: 20px;
+  background: var(--colourPop);
+  padding: 8px 20px;
+  border: 1px solid var(--colourPop);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  outline: none;
+}
+
+.ContactButton:hover {
+  color: var(--colourPop);
+  font-size: 20px;
+  background: transparent;
+  padding: 8px 20px;
+  border: 1px solid var(--colourPop);
+  border-radius: 20px;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.ContactButton:active {
+  outline: none;
+}
+
+.ContactButton:focus,
+.ContactInput:focus {
+  outline: none;
+}
+
+
+
+@media screen and (max-width: 960px) {
+  .ContactLine{
+    display: none;
+  }
+
+  .companyContactInfo{
+    margin-bottom: 50px;
+  }
+
+}
+
+
+/*-------------------------------- In Good Company------------------------ */
+
+.GoodCompany {
+  width: 100%;
+  margin-bottom: 50px;
+  background-color: var(--colourBackWhite);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  padding-bottom: 5%;
+  box-shadow: 1px 1px 13px 10px #D6DEF0;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 5px;
+  margin-bottom: 15%;
+}
+
+.GoodCompanyTitle  {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.GoodCompanyText{
+  font-size: 2rem;
+  color: var(--colourTextDark);
+}
+
+.GoodCompanyImages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----------------------------.logos --------------- */
+
+.logoContainer{
+  width: 100%;
+  height: 100px;
+  /* background-color:rosybrown ; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+
+.AllLogos {
+  padding-right: 10px;
+  padding-left: 10px;
+  height: auto;
+  width: 60%;
+}
+
+.LogoWithRadius {
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 2px;
+  height: auto;
+  width: 60%;
+}
+
+.TravelTimeWorld {
+  padding-right: 10px;
+  padding-left: 10px;
+  height: auto;
+  width: 60%;
+}
+
+.GoodCompanyImages, .MicklefieldHall, .TravelTimeWorld, .Yellowyoyo, .OliverMyles, .DavyAssociates, .Greens, .AllLogos, .LogoWithRadius {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */    
+   -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   -ms-filter: grayscale(100%);
+   filter: grayscale(100%);
+   filter: gray; 
+}
+
+.GoodCompanyImages:hover, .MicklefieldHall:hover, .TravelTimeWorld:hover, .Yellowyoyo:hover, .OliverMyles:hover, .DavyAssociates:hover, .Greens:hover, .AllLogos:hover, .LogoWithRadius:hover {
+   -webkit-filter: none;
+   -moz-filter: none;
+   -ms-filter: none;
+   filter: none;
+-webkit-transition: all 500ms ease;
+-moz-transition: all 500ms ease;
+-ms-transition: all 500ms ease;
+-o-transition: all 500ms ease;
+transition: all 500ms ease;
+}
+

@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+/*
+
+Breakpoints in PX
+
+xs, extra-small: 0px
+sm, small: 600px
+md, medium: 960px
+lg, large: 1280px
+xl, extra-large: 1920px
+  
+}*/
+
+@font-face {
+  font-family: muli, "sans-serif";
+  src: url(https://use.typekit.net/aav7lhy.css);
+  font-weight: 400;
+  font-style: italic;
+} 
+
+@font-face {
+  src: url(https://use.typekit.net/aav7lhy.css);
+  font-family: muli,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} 
+
+@font-face {
+  src: url(https://use.typekit.net/aav7lhy.css);
+  font-family: muli,sans-serif;
+  font-weight: 700;
+  font-style: italic;
+} 
+
+@font-face {
+  src: url(https://use.typekit.net/aav7lhy.css);
+  font-family: muli,sans-serif;
+  font-weight: 700;
+  font-style: bold;
+} 
+
+
+
+html,
+body {
+  --colourPop: #e51a94; /* var(--colourPop); */
+  --colourTextGrey: #3e4a56; /* var(--colourTextGrey); */
+  --colourTextDark: #1f306d; /* var(--colourTextDark); */
+  --colourBackLilac: #e0e8fa; /* var(--colourBackLilac); */
+  --colourBackGrey: #f5f7fd; /* var(--colourBackGrey); */
+  --colourBackWhite: #ffffff; /* var(--colourBackWhite); */
+  margin: 0;
+  /* overflow: hidden; */
+  background-repeat: repeat;
+  font-family: muli !important;
+  color: var(--colourTextGrey);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
+  margin: 0;                                                                                 
+  padding: 0;
+  /* overflow: hidden; */
+  /* font-family: PT-Sans; */
+  /* font-family: "okta-neue", sans-serif; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home,
+.about,
+.products,
+.sign-up {
   display: flex;
-  flex-direction: column;
+  height: 90vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+#particles-background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 0.95;
+  background-color: var(--colourBackLilac);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.body-particles {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.aboutBackground {
+  background-color: white;
+  height: 100vh;
+  width: 100%;
 }

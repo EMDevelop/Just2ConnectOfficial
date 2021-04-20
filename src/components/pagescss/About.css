@@ -1,0 +1,290 @@
+
+/* ------------------------------------------------------ */
+/* ----------------------About ------------------------ */
+/* ------------------------------------------------------ */
+
+
+.AboutHero {
+  width: 100%;
+  min-height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: var(--colourTextDark);
+
+}
+
+.AboutHeroTitle {
+  font-size: 3.5rem;
+
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@media screen and (max-width: 550px) {
+  .AboutHeroTitle{
+    font-size: 2.5rem;
+    
+  }
+  
+  .AboutHeroText{
+    font-size: 1rem;
+  }
+}
+
+.AboutHeroTextContainer {
+  margin-top: 4px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  
+}
+
+.AboutHeroText {
+  font-size: 1.5rem;
+  
+  color: var(--colourTextGrey);
+}
+
+.AboutHeroText b{
+  color: var(--colourPop)
+}
+
+/* ------------------------------------------------------ */
+/* ----------------------Timeline ------------------------ */
+/* ------------------------------------------------------ */
+
+.Timeline {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15%;
+}
+
+.TimelineTitle {
+  font-size: 3rem;
+  padding-top: 50px;
+  padding-top: 50px;
+  color: var(--colourTextDark);
+}
+
+.TimelineContainer {
+
+  width: 100%;
+}
+
+li{
+  margin-left: 30px;
+}
+
+
+/* ------------------------------------------------------ */
+/* ----------------------Our CEO ------------------------ */
+/* ------------------------------------------------------ */
+
+.OurPeopleContainer{
+  width: 70%;
+  margin-left: 5%;
+  margin-right: 25%;
+  /* min-height: 80vh; */
+  height: fit-content;
+  background-color: #fff;
+  text-align: left;
+  box-shadow: 1px 1px 13px 10px #D6DEF0;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  border-radius: 5px;
+}
+
+.OurPeopleContainer2{
+  width: 70%;
+  margin-left: 25%;
+  margin-right: 5%;
+  margin-top: 50px;
+  margin-bottom: 10%;
+  /* min-height: 80vh; */
+  height: fit-content;
+  background-color: #fff;
+  text-align: left;
+  box-shadow: 1px 1px 13px 10px #D6DEF0;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  border-radius: 5px;
+}
+
+
+
+.peopleGrid{
+  padding-bottom: 10%;
+}
+
+.ourCEOTitle{
+  font-size: 3rem;
+  padding-top: 5%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  color: var(--colourTextDark)
+}
+
+.OurPeople {
+   width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  
+}
+
+
+.peopleImageContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: 1
+}
+
+.hiddenDoodle{
+  width: 100%;
+  height: 20px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: none !important; */
+  order: 2
+}
+
+
+.PeopleImage{
+border-radius: 50%;
+border: 2px solid var(--colourPop);
+height: 250px;
+width: 250px;
+}
+
+
+.PeopleText{
+  width: 100%;
+  height:  fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+/* background-color: red; */
+  
+
+}
+
+.personExperienceContainer{
+  width: 70%;
+  height:fit-content;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.experienceDate{
+  letter-spacing: 3px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--colourPop);
+  text-align: left;
+  width: 100%;
+
+  height: 22px;
+}
+
+.experienceCompany{
+  
+  color: var(--colourTextDark);
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+ 
+  }
+
+.experience{ 
+  width: 100%;
+}
+
+
+
+
+/* Julia's hidden */
+
+  .HiddenIMG1{
+    width: 50%;
+  }
+
+.HiddenIMG2{
+  width: 50%;
+  }
+
+    /* md */
+    @media screen and (max-width: 1100px) {
+      
+      .OurPeopleContainer{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+            
+      .OurPeopleContainer2{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+
+      }
+
+    }
+
+
+    @media screen and (max-width: 450px) {
+      .ourCEOTitle h1{
+        font-size: 2rem;
+        padding-top: 20px;
+      }
+
+      .PeopleImage { 
+        height: 200px;
+        width: 200px;
+      }
+
+    }
+
+
+        /* xs */
+    @media screen and (max-width: 960px) {
+
+
+      .peopleHiddenContainer2 {
+        display:none;
+
+      }
+
+      .PeopleImage{
+        margin-bottom: 70px;
+      }
+    }
+
+      /* above xs */
+    @media screen and (min-width: 961px) {
+      
+      .peopleHiddenContainer1 {
+        display:none;
+      }
+    }

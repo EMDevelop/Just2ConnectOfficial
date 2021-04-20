@@ -1,0 +1,192 @@
+
+/* BASIC NAVBAR STYLING  */
+
+*{
+  font-family: muli !important;
+}
+
+.MainLogo{
+  height: 60px;
+  width: auto;
+  padding-left: 40px;
+}
+
+.Navbar{
+  background-color: white; 
+  box-shadow: 1px 1px 13px 10px #D6DEF0;
+}
+
+ /* .CTAButton:active{
+  text-decoration: none;
+  outline: none;
+  border: none;
+
+}
+.CTAButton:focus{
+  outline: 0;
+} */
+
+
+/* NAVLINKS STYLING */
+
+.NavLinks{
+  font-weight: bold !important;
+}
+
+
+.NavLinks:hover{
+  color: var(--colourPop)  !important;
+}
+
+
+/* DROPDOWN STYLING */
+
+.DropdownNav:hover{
+  color: var(--colourPop)  !important;
+
+}
+
+.DropdownNav a:hover{
+  color: var(--colourPop)  !important;
+}
+
+.DropdownNav a:optional{
+  color: var(--colourPop)  !important;
+}
+
+.dropdown-menu{
+  background-color: white !important;
+  border-radius: 5% !important;
+  border: 2px solid var(--colourBackLilac) !important; 
+}
+
+.DropdownNav {
+  vertical-align: auto !important;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 0px;
+  padding-bottom:0px;
+  font-weight: bold;
+}
+
+.dropdownItemsNavbar {
+  margin-top:3%;
+  margin-bottom: 3%;
+}
+
+.dropdownItemsNavbar:hover{
+  color: var(--colourPop)  !important;
+  background-color: transparent !important;
+}
+
+.dropdown-menu:active .DropdownNav a:active {
+  color: var(--colourPop)  !important;
+}
+
+
+/* CTA BUTTON STYLING */
+
+.CTAButton{
+  background-color: white !important;
+  color: var(--colourPop)  !important;
+  border: 2px solid var(--colourPop)  !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  border-radius: 10px !important;
+  padding-left: 20px !important;;
+  padding-right: 20px !important;
+}
+
+.CTAButton:hover{
+  color: var(--colourBackWhite)  !important;
+  background-color: var(--colourPop)  !important;
+}
+
+.CTAPhone{
+  height: 25px;
+}
+
+.CTAText{
+  transform: translate(0px,35%) !important;
+  padding-left: 15px !important;
+  font-weight: bold !important;
+
+}
+
+/* DEVICE VIEWS STYLING */
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+@media screen and (min-width: 991px) {
+  .Navbar{
+    height: 15vh; 
+    }
+
+    .MainLogo{
+      height: 60px;
+      width: auto;
+      margin-right: 50px;
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+.dropdownItemsNavbar {
+  text-align: center !important;
+}
+
+.CTAButton{
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  color: var(--colourBackWhite)  !important;
+  background-color: var(--colourPop)  !important;
+}
+
+.NavLinks{
+  font-weight: bold !important;
+  margin-top: 5%;
+}
+
+.DropdownNav a{
+  margin-top: 5%;
+}
+
+}
+
+/* Hover Underlines */
+
+.NavLinks {
+  float: left;
+  position: relative;
+  padding: 10px 20px;
+  overflow: hidden;
+}
+
+.NavLinks::after {
+  background-color: var(--colourPop);
+  content: "";
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  transition: width 0.35s ease 0s;
+  position: absolute;
+}
+
+.NavLinks:hover::after {
+  width: 100%;
+}
+
+
+
+
+
+
+

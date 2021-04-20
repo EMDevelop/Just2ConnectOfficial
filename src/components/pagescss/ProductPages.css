@@ -1,0 +1,450 @@
+.Hero {
+  min-height: 100vh;
+  height: fit-content;
+  width: 100%;
+  background: transparent;
+  align-items: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.HeroImagePP {
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  /* background-color:tomato; */
+}
+
+.Hero_Stock_ImagePP {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.HeroSloganPP {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  color: var(--colourTextDark);
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;  
+  padding-bottom: 10%;
+}
+
+
+@media screen and (max-width: 959px) {
+    .HeroSloganPP {
+      padding-left: 5%;
+      text-align: center;
+      padding-top: 25%;
+    }
+  }
+
+.HeroTitle{
+  font-size: 4.5rem;
+}
+
+.HeroSubtitle{
+  font-size: 1.5rem;
+  /* padding-top: 40px; */
+  color: var(--colourTextGrey);
+}
+
+.HeroSubtitleSIM{
+  font-size: 1.5rem;
+  /* padding-top: 40px; */
+  color: var(--colourTextGrey);
+}
+
+
+.HeroSubtitle b {
+  font-weight: normal;
+  font-size: 2rem;
+  color: var(--colourPop)
+}
+
+.HeroSubtitleSIM b {
+  font-weight: normal;
+  font-size: 2rem;
+  color: var(--colourPop)
+}
+
+/* --------------------------------------- */
+/* Page Descripton */
+/* --------------------------------------- */
+
+.descriptionSection{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  /* height: 40vh; */
+  border-radius: 5px;
+  height: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--colourTextGrey);
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(1.5px);
+  box-shadow: 1px 1px 13px 10px #D6DEF0;
+}
+
+.nutshellImage {
+  padding-bottom: 5%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.nutshellIMG {
+  width: 80%;
+}
+
+.nutshell {
+  /* padding-bottom: 2%; */
+  color: var(--colourPop);
+  
+}
+
+.descriptionText{
+  font-weight: bold;
+  color: var(--colourTextGrey);
+  letter-spacing: 0.5px;
+  /* font-style: italic; */
+  font-size: 1.5rem;
+  padding-top: 3%
+}
+
+@media screen and (max-width: 600px) {
+    .descriptionText{
+    font-size: 1.25rem;
+    }
+  }
+
+.descriptionText b{
+  color: var(--colourPop)
+}
+
+/* --------------------------------------- */
+/* Features */
+/* --------------------------------------- */
+
+.ContentContainer {
+  width: 100%;
+  min-height: 65vh;
+  height: fit-content;
+  padding-bottom: 40px;
+  /* background-color: var(--colourBackGrey); */
+  /* box-shadow: 1px 1px 15px 8px #e4e3e394; */
+  
+}
+
+.ContentTitle {
+  font-size: 3rem;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  color: var(--colourTextDark);
+}
+
+.BenefitsContainer{
+  min-width: 90%;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  /* background-color: red; */
+  
+}
+
+.ContentGrid {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+
+.FeatureContainer{
+  backdrop-filter: blur(1.5px);
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 75px;
+  min-height: 75px;
+  transition: top ease 0.5s;
+  position: relative;
+  top: 0;
+
+}
+
+.FeatureTitle{
+  color: var(--colourTextGrey);
+  font-size: 1.2rem;
+}
+
+.FeatureText{
+  color: var(--colourTextGrey);
+  font-size: 1rem;
+  font-style: normal;
+}
+
+.FeatureContainerTitles{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 350px;
+  min-height: 75px;
+}
+
+.FeatureContainerText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  max-width: 500px;
+  min-height: 250px;
+  padding-top: 5%;
+}
+
+.featureIcon {
+  width: 100%;
+}
+
+.featureContainerWrapper {
+    margin-left: 5%;
+  margin-right: 5%;
+  width: 250px;
+}
+/* ----------------------------------f------------------------------- */
+
+/*Column Features*/
+
+/* ----------------------------------------------------------------- */
+
+.ColumnFeatures{
+  padding-top: 3%;
+  padding-bottom: 15%;
+}
+
+.ColumnServices{
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Column{
+  width: 350px;
+  height: 350px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(1.5px);
+  box-shadow: 1px 1px 13px 10px #D6DEF0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2% !important;
+  padding-bottom: 2% !important;
+  margin-top: 2% !important;
+  margin-bottom: 2% !important;
+}
+
+
+.columnTitle{
+  height: 15%;
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.columnTitleText{
+  color: var(--colourTextDark);
+}
+
+.columnImage{
+  height: fit-content;
+  width: 100%;
+  /* background-color: brown; */
+}
+
+.columnFeatureTitle{
+  width: 100%;
+  color: var(--colourTextDark);
+  margin-top: 5px;
+}
+
+.UpDownContainer{
+  width: 100%;
+  height: fit-content;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+}
+
+.upDown{
+  flex: 1;
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.mbps{
+  font-weight: bold;
+  color: var(--colourPop);
+  flex: 1;
+}
+
+.blabla{
+  color: var(--colourTextGrey);
+  font-size: 0.7rem;
+  flex: 1;
+}
+
+@media screen and (max-width: 599px) {
+    .Column {
+      width: 300px;
+     
+    }
+
+    .HeroTitle{
+      font-size: 3rem;
+    }
+    
+  }
+
+  /* SM */
+  @media screen and (min-width: 600px) {
+    .Column {
+      width: 300px;
+ }
+  }
+
+
+    /* md */
+    @media screen and (min-width: 1250px) {
+      
+      .outerGridColumn{
+        padding-left: 12%;
+        padding-right: 12%;
+      }
+
+    }
+
+/* --------------------------------------- */
+/* Speedo Section */
+/* --------------------------------------- */
+    .Speedo{
+      width: 60%;
+    }
+
+
+/* --------------------------------------- */
+/* FAQ */
+/* --------------------------------------- */
+
+.FAQ {
+  width: 100%;
+  min-height: 500px;
+  height: fit-content;
+  background-color: var(--colourBackGrey);
+  padding-bottom: 40px;
+  box-shadow: 1px 1px 13px 10px #D6DEF0;
+}
+
+.FAQTitle {
+  padding-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.FAQText {
+  font-size: 3rem;
+  color: var(--colourTextDark);
+}
+
+.FAQQuestion{
+  font-weight: bold;
+}
+
+.MuiAccordion-root:before{
+  background-color: transparent !important;
+}
+
+/* --------------------------------------- */
+/* Contact Us */
+/* --------------------------------------- */
+
+.ContactUs {
+  width: 100%;
+  height: 100vh;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: transparent;
+  justify-content: center;
+  background-image: url(/src/images/icons/contactBlob.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 700px) {
+  .ContactUs {
+  background-image: none;
+  }
+}
+
+
+/* mobile sim 
+subtitle specific */
+
+@media screen and (max-width: 370px) {
+
+
+  .HeroSubtitleSIM{
+    font-size: 1.2rem;
+    /* padding-top: 40px; */
+    color: var(--colourTextGrey);
+  }
+}

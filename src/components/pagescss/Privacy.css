@@ -1,0 +1,77 @@
+.Privacy{
+    
+    width: 80%;
+    margin-top: 10%;
+    padding-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: fit-content;
+    box-shadow: 1px 1px 13px 10px #D6DEF0;
+    background-color: rgba(255, 255, 255, 0.486);
+    backdrop-filter: blur(1px);
+}
+
+.PrivacyTitleSection{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+
+}
+
+.PrivacyPolicyPop{
+    color: var(--colourPop);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PrivacyPolicyTitle{
+    color: var(--colourTextDark);
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PrivacyBody{
+    width: 100%;
+    height: fit-content;
+    /* padding-top: px; */
+    padding-left: 50px;
+}
+
+.PrivacyItem{ 
+    width: 100%;
+    height: fit-content;
+    padding-top: 50px;
+}
+
+.ItemHeader{
+    color: var(--colourPop);
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.ItemSubheader{
+
+    color: var(--colourTextDark);
+    font-size: 1.5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.test{
+    background-color: blue im !important;
+    width: fit-content !important;
+}
+
+
+.list2{
+    margin-left: 70px;
+}
