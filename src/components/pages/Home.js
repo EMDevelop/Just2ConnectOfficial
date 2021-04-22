@@ -58,8 +58,8 @@ function Home() {
                 <div className="HeroImage">
                   <ScrollAnimation
                     animateIn="slideInLeft"
-                    duration={0.7}
-                    delay={800}
+                    duration={0.4}
+                    delay={50}
                     animateOnce={true}
                   >
                     <img
@@ -80,7 +80,7 @@ function Home() {
 
                     <ScrollAnimation
                       animateIn="slideInRight"
-                      duration={1}
+                      duration={0.4}
                       animateOnce={true}
                     >
                       <h1 className="HeroCompanySlogan">
@@ -92,7 +92,7 @@ function Home() {
                     <div className="HeroSlogan">
                       <ScrollAnimation
                         animateIn="slideInRight"
-                        duration={1}
+                        duration={0.5}
                         animateOnce={true}
                       >
                         <h1 className="Slogan">
@@ -104,7 +104,7 @@ function Home() {
 
                       <ScrollAnimation
                         animateIn="slideInRight"
-                        duration={0.7}
+                        duration={0.6}
                         delay={1400}
                         animateOnce={true}
                       >
