@@ -56,19 +56,19 @@ function Home() {
 
               <Grid item xs={12} sm={12} md={5} lg={5}>
                 <div className="HeroImage">
-                  <ScrollAnimation
+                  {/* <ScrollAnimation
                     animateIn="slideInLeft"
                     duration={0.4}
                     delay={50}
                     animateOnce={true}
-                  >
+                  > */}
                     <img
                       src={HeroImage}
                       alt="Business Phone System Just2Connect"
                       className="Hero_Stock_Image"
                       draggable="false"
                     />
-                  </ScrollAnimation>
+                  {/* </ScrollAnimation> */}
                 </div>
               </Grid>
 
