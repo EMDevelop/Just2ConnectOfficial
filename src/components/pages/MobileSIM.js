@@ -10,7 +10,7 @@ import FeatureItem from "../FeatureItem.js";
 import FAQItem from "../FAQItem.js";
 
 // Icons and Images 
-import Peanut from '../../images/ProductPage/nutshellIcon.svg'
+import Peanut from "../../images/ProductPage/PinkNutshell.svg";
 import MobileSIMHero from '../../images/ProductPage/mobileSimHero.svg'
 
 
@@ -92,32 +92,32 @@ const classes = useStyles();
           >
             <FeatureItem
               featureTitle="30 Day Contract"
-              featureDescription="With our tariffs, 30 days notice is all we need to cancel a SIM contract"
+              featureDescription="With our tariffs, 30 days notice is all we need to cancel a SIM contract."
               LargeGrid = {4}
             />
             <FeatureItem
               featureTitle="Unlimited Calls/Texts/Data"
-              featureDescription="Choose from a range of products including unlimited everything"
+              featureDescription="Choose from a range of products including unlimited everything."
               LargeGrid = {4}
             />
             <FeatureItem
               featureTitle="Nationwide Coverage"
-              featureDescription="SIMs available for O2 or Vodafone"
+              featureDescription="SIMs available for O2 or Vodafone."
               LargeGrid = {4}
             />
             <FeatureItem
               featureTitle="Simple To Provision"
-              featureDescription="Place an order you'll be live within 24 hrs - often before"
+              featureDescription="Place an order and you'll be live within 24 hrs - often before."
               LargeGrid = {4}
             />
             <FeatureItem
               featureTitle="Transfer Your Existing Number"
-              featureDescription="Transfer your existing mobile number at no cost"
+              featureDescription="Transfer your existing mobile number at no cost."
               LargeGrid = {4}
             />
             <FeatureItem
               featureTitle="2nd eSIM For Your Mobile"
-              featureDescription="This gives you a second SIM option (for selected handsets)"
+              featureDescription="This gives you a second SIM option (for selected handsets)."
               LargeGrid = {4}
             />
             </Grid>
@@ -133,20 +133,20 @@ const classes = useStyles();
         </div>
 
         <FAQItem
-          Question="Can I keep my existing Number?"
-          Answer="Yes, just request a PAC code from your existing supplier - you can get the code by texting the word 'PAC' to 65075"
+          Question="Can I keep my existing number?"
+          Answer="Yes, just request a PAC code from your existing supplier - you can get the code by texting the word 'PAC' to 65075."
         />
         <FAQItem
           Question="Is the contract really only on a 30 day basis?"
-          Answer="Yes, all of our SIM's are on a 30 day contract basis"
+          Answer="Yes, all of our SIM's are on a 30 day contract basis."
         />
         <FAQItem
           Question="What is an eSIM?"
-          Answer=" An eSIM is a virtual SIM card for selected mobile phones. it provides a second mobile number, allowing you to use one for business and one for personal on the same handset"
+          Answer=" An eSIM is a virtual SIM card for selected mobile phones. It provides a second mobile number, allowing you to use one for business and one for personal on the same handset."
         />
         <FAQItem
           Question="Will an eSIM work on all mobile handsets?"
-          Answer="Newer iPhones, Google Pixels and Samsung Galaxy handsets support an eSIM. If you want to find out more, give us a call on 01442 573030"
+          Answer="Newer iPhones, Google Pixels and Samsung Galaxy handsets support an eSIM. If you want to find out more, give us a call on 01442 573030."
         />
       </div>
 

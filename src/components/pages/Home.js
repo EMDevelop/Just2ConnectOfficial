@@ -113,7 +113,7 @@ function Home() {
                           you need cloud-based telephony, a new number or
                           business-strength broadband, we will provide the right
                           solution for your business, at a price you can afford - all
-                          with exceptional service
+                          with exceptional service.
                         </h1>
                       </ScrollAnimation>
 
@@ -132,7 +132,7 @@ function Home() {
       {/* ---------------------------------------------------------------------------------------------------------------------------- */}
 
       <div className="OurServices-container">
-        <ScrollAnimation animateIn="fadeIn" duration={1}>
+        <ScrollAnimation animateIn="fadeIn" duration={1} animateOnce={true}>
           <h1 className="OurServicesTitle">Our Services</h1>
         </ScrollAnimation>
 
@@ -145,7 +145,7 @@ function Home() {
           alignItems="center"
         >
           <Grid item xs={12} sm={12} md={6} lg={3}>
-            <ScrollAnimation animateIn="slideInUp" duration={0.6} delay={300}>
+            <ScrollAnimation animateIn="slideInUp" duration={0.6} delay={300} animateOnce={true}>
               <div className="ServicesContainerOuter">
                 <div className="servicesIcon">
                   <img
@@ -173,7 +173,7 @@ function Home() {
           {/* Broadband */}
 
           <Grid item xs={12} sm={12} md={6} lg={3}>
-            <ScrollAnimation animateIn="slideInUp" duration={0.6} delay={350}>
+            <ScrollAnimation animateIn="slideInUp" duration={0.6} delay={350} animateOnce={true}>
               <div className="ServicesContainerOuter">
                 <div className="servicesIcon">
                   <img
@@ -199,7 +199,7 @@ function Home() {
           </Grid>
 
           <Grid item xs={12} sm={12} md={6} lg={3}>
-            <ScrollAnimation animateIn="slideInUp" duration={0.6} delay={400}>
+            <ScrollAnimation animateIn="slideInUp" duration={0.6} delay={400} animateOnce={true}>
               <div className="ServicesContainerOuter">
                 <div className="servicesIcon">
                   <img
@@ -226,7 +226,7 @@ function Home() {
           </Grid>
 
           <Grid item xs={12} sm={12} md={6} lg={3}>
-            <ScrollAnimation animateIn="slideInUp" duration={0.6} delay={450}>
+            <ScrollAnimation animateIn="slideInUp" duration={0.6} delay={450} animateOnce={true}>
               <div className="ServicesContainerOuter">
                 <div className="servicesIcon">
                   <img
@@ -255,8 +255,6 @@ function Home() {
         </Grid>
       </div>
 
-      <div className="transparentSection"></div>
-
       {/* ---------------------------------------------------------------------------------------------------------------------------- */}
 
       {/* Welcome To Just2Connect */}
@@ -273,7 +271,7 @@ function Home() {
         >
           <Grid item xs={12} md={8} lg={8}>
             <div className="aboutTextConainer">
-              <ScrollAnimation animateIn="slideInLeft" duration={0.6} delay={0}>
+              <ScrollAnimation animateIn="slideInLeft" duration={0.6} delay={0} animateOnce={true}>
                 <h2 className="aboutHeading1">Welcome to Just2Connect</h2>
                 <h2 className="aboutHeading2">
                   Business Telephone Systems & Broadband in Hertfordshire,
@@ -282,7 +280,7 @@ function Home() {
 
                 <p className="aboutParagraph">
                   Low-cost, flexible and tailored solutions to meet your
-                  business requirements
+                  business requirements.
                 </p>
               </ScrollAnimation>
             </div>
@@ -294,6 +292,7 @@ function Home() {
                 animateIn="slideInRight"
                 duration={0.6}
                 delay={0}
+                animateOnce={true}
               >
                 <img
                   src={WelcomeIllustration1}
@@ -308,7 +307,7 @@ function Home() {
         <Grid container spacing={0} className={classes.grid}>
           <Grid item xs={12} md={4} lg={4}>
             <div className="AboutUsImages">
-              <ScrollAnimation animateIn="slideInLeft" duration={0.6} delay={0}>
+              <ScrollAnimation animateIn="slideInLeft" duration={0.6} delay={0} animateOnce={true}>
                 <img
                   src={WelcomeIllustration2}
                   alt="Best Business Mobile Sim Card In Hertfordshire"
@@ -319,12 +318,12 @@ function Home() {
           </Grid>
 
           <Grid item xs={12} md={8} lg={8}>
-            <ScrollAnimation animateIn="slideInRight" duration={0.6} delay={0}>
+            <ScrollAnimation animateIn="slideInRight" duration={0.6} delay={0} animateOnce={true}>
               <div className="aboutTextConainer">
                 <p className="aboutParagraph">
                   Our professional, friendly, solution-focussed team provide a
-                  first-class local sercive ensuring our customer needs are at
-                  the forefront of everything else
+                  first-class local service ensuring our customer needs are at
+                  the forefront of everything else.
                 </p>
                 <p className="aboutParagraph">
                   We offer a range of telephone products and services with
@@ -332,18 +331,18 @@ function Home() {
                   still being part of the 'office' phone system. This means that
                   wherever you are, or whatever device is available (desk phone,
                   computer, tablet or mobile phone), your will always stay
-                  connected to your customers
+                  connected to your customers.
                 </p>
                 <p className="aboutParagraph">
                   We provide a number of broadband options, speeds and
-                  pricepoints to meet all of your needs
+                  pricepoints to meet all of your needs.
                 </p>
                 <p className="aboutParagraph">
                   <a href="/Contact" className="ContactBoldLink">
                     Contact us
                   </a>
                   to find out more, we love to chat all things telephony and
-                  broadband
+                  broadband.
                 </p>
               </div>
             </ScrollAnimation>
@@ -373,7 +372,7 @@ function Home() {
           alignItems="center"
         >
           <Grid item xs={12} md={6}>
-            <ScrollAnimation animateIn="fadeIn" duration={1} delay={300}>
+            <ScrollAnimation animateIn="fadeIn" duration={1} delay={100} animateOnce={true}>
               <div className="benefitContainer">
                 <div className="illustrationContainer">
                   <img
@@ -388,7 +387,7 @@ function Home() {
                 <div className="benefitDescriptionContainer">
                   <p className="BenefitDescription">
                     Service and site visits are included. Gone are those
-                    frustrating support calls or shocking call-out charges
+                    frustrating support calls or shocking call-out charges.
                   </p>
                 </div>
               </div>
@@ -396,7 +395,7 @@ function Home() {
           </Grid>
 
           <Grid item xs={12} md={6}>
-            <ScrollAnimation animateIn="fadeIn" duration={1} delay={200}>
+            <ScrollAnimation animateIn="fadeIn" duration={1} delay={200} animateOnce={true}>
               <div className="benefitContainer">
                 <div className="illustrationContainer">
                   <img
@@ -413,7 +412,7 @@ function Home() {
                 <div className="benefitDescriptionContainer">
                   <p className="BenefitDescription">
                     We promise an affordable and reliable soluiton with
-                    absolutely no hidden costs
+                    absolutely no hidden costs.
                   </p>
                 </div>
               </div>
@@ -421,7 +420,7 @@ function Home() {
           </Grid>
 
           <Grid item xs={12} md={6}>
-            <ScrollAnimation animateIn="fadeIn" duration={1} delay={100}>
+            <ScrollAnimation animateIn="fadeIn" duration={1} delay={300} animateOnce={true}>
               <div className="benefitContainer">
                 <div className="illustrationContainer">
                   <img
@@ -436,7 +435,7 @@ function Home() {
                 <div className="benefitDescriptionContainer">
                   <p className="BenefitDescription">
                     Our friendly team provide a first-class local service. Don't
-                    just take our word, check out our customer reviews below
+                    just take our word, check out our customer reviews below.
                   </p>
                 </div>
               </div>
@@ -444,7 +443,7 @@ function Home() {
           </Grid>
 
           <Grid item xs={12} md={6}>
-            <ScrollAnimation animateIn="fadeIn" duration={1} delay={400}>
+            <ScrollAnimation animateIn="fadeIn" duration={1} delay={400} animateOnce={true}>
               <div className="benefitContainer">
                 <div className="illustrationContainer">
                   <img
@@ -460,7 +459,7 @@ function Home() {
                   <p className="BenefitDescription">
                     We believe when you choose us you'll never want to leave,
                     which is why we are confident offering most services on a 30
-                    day contract
+                    day contract.
                   </p>
                 </div>
               </div>
@@ -502,7 +501,7 @@ function Home() {
               </div>
               <p className="Quote">
                 It was the <b>best thing we ever did!</b> Terry and his team
-                offer a first class service - highly recommend them
+                offer a first-class service - highly recommend them
               </p>
               <div className="rightQuote">
                 <img src={Quote99} alt="QuotationIcon" className="QuoteIcon" />

@@ -5,7 +5,6 @@ import emailjs from "emailjs-com";
 
 
 function ContactUs() {
-  console.log("Font of Optional Short Message - Contact Us");
   const [status, setStatus] = useState("Submit");
 
   //setStatus("Sending...");
@@ -16,10 +15,10 @@ function ContactUs() {
 
     emailjs
       .sendForm(
-        "service_7vljfk6",
-        "template_iaj6ueg",
+        process.env.REACT_APP_EMAILJS_SERVICE,
+        process.env.REACT_APP_EMAILJS_TEMPLATE,
         e.target,
-        "user_mDTAtWfAVpmZRWrpjPBaB"
+        process.env.REACT_APP_EMAILJS_USER
       )
       .then(
         (result) => {

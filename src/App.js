@@ -1,6 +1,6 @@
 import './App.css';
-import React from 'react';
-import {BrowserRouter as Router, Route} from 'react-router-dom'
+import React, {useEffect} from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import NavigationBar from './components/Navbar';
 import Home from './components/pages/Home'
 import About from './components/pages/About'
@@ -15,17 +15,26 @@ import Privacy from './components/pages/Privacy'
 import Footer from './components/Footer'
 import "pathseg";
 import ParticlesBackground from "./components/ParticlesBackground.js";
+import ReactGA from 'react-ga';
 
 
 function App() {
+
+
+  useEffect(() => {
+    ReactGA.initialize(process.env.REACT_APP_GA_TRACKING);
+    // To Report Page View 
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, [])
+
   
   return (
       <div className="App">
         <Router>
-            <div class="body-particles">
+            <div className="body-particles">
               <div id="wrapper">
                 <NavigationBar />
-                <switch>
+                <Switch>
                   <Route path='/' exact component ={Home}/>
                   <Route path='/VideoConferencing' exact component ={VideoConferencing}/>
                   <Route path='/MobileSIM' exact component ={MobileSIM}/>
@@ -36,12 +45,12 @@ function App() {
                   <Route path='/About' exact component ={About}/>
                   <Route path='/Contact' exact component ={Contact}/>
                   <Route path='/Privacy' exact component ={Privacy}/>
-                </switch>
+                </Switch>
               <Footer/>
               </div>
             </div>
             <div id="particles-background">                
-                    {/* <ParticlesBackground/> */}
+                    <ParticlesBackground/>
             </div>
           
         </Router>  

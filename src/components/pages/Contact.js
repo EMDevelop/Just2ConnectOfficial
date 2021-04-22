@@ -1,4 +1,3 @@
-/** @format */
 
 import "../pagescss/Contact.css";
 import { Grid } from "@material-ui/core";
@@ -40,7 +39,6 @@ import HSD from "../../images/Contact/HSD.png";
 import Indigo from "../../images/Contact/Indigo.svg";
 import MCA from "../../images/Contact/MCA.jpg";
 import NA from "../../images/Contact/NA.png";
-import Peony from "../../images/Contact/Peony.png";
 import PES from "../../images/Contact/PES.jpg";
 import RedBird from "../../images/Contact/RedBird.png";
 import TBC from "../../images/Contact/TBC.jpg";
@@ -49,18 +47,16 @@ import Vine from "../../images/Contact/Vine.jpg";
 function Contact() {
   const [status, setStatus] = useState("Submit");
 
-  //setStatus("Sending...");
-
   function sendEmail(e) {
     setStatus("Sending...");
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_7vljfk6",
-        "template_iaj6ueg",
+        process.env.REACT_APP_EMAILJS_SERVICE,
+        process.env.REACT_APP_EMAILJS_TEMPLATE,
         e.target,
-        "user_mDTAtWfAVpmZRWrpjPBaB"
+        process.env.REACT_APP_EMAILJS_USER
       )
       .then(
         (result) => {
@@ -84,7 +80,7 @@ function Contact() {
       <div className="ContactHero">
         <h1 className="ContactHeroText">Get in touch with the team</h1>
         <p className="ContactHeroTextSmall">
-          No matter your question, our friendly team will help provide you the
+          No matter your question, our friendly team will help provide you with the
           answer
         </p>
       </div>
@@ -153,8 +149,7 @@ function Contact() {
               </div>
             </div>
           </Grid>
-          <Grid item xs={0} sm={0} md={1}>
-            {/* https://stackoverflow.com/questions/58189940/material-ui-grid-does-not-hide-whe-use-display */}
+          <Grid item xs={false} sm={false} md={1}>
             <div className="ContactLine"></div>
           </Grid>
           <Grid item xs={12} sm={12} md={5}>
@@ -253,6 +248,28 @@ function Contact() {
               <div className="logoContainer">
                 {" "}
                 <img
+                  src={EIC}
+                  alt="EIC"
+                  className="AllLogos"
+                  draggable="false"
+                />
+              </div>
+            </Grid>
+            <Grid item xs={12} sm={3} md={2}>
+              <div className="logoContainer">
+                {" "}
+                <img
+                  src={HJP}
+                  alt="HJP"
+                  className="AllLogos"
+                  draggable="false"
+                />
+              </div>
+            </Grid>
+            <Grid item xs={12} sm={3} md={2}>
+              <div className="logoContainer">
+                {" "}
+                <img
                   src={HarpendenGolf}
                   alt="HarpendenGolf"
                   className="AllLogos"
@@ -292,6 +309,39 @@ function Contact() {
             </Grid>
             <Grid item xs={12} sm={3} md={2}>
               <div className="logoContainer">
+                {" "}
+                <img
+                  src={Brash}
+                  alt="Brash"
+                  className="AllLogos"
+                  draggable="false"
+                />
+              </div>
+            </Grid>
+            <Grid item xs={12} sm={3} md={2}>
+              <div className="logoContainer">
+                {" "}
+                <img
+                  src={HSD}
+                  alt="HSD"
+                  className="AllLogos"
+                  draggable="false"
+                />
+              </div>
+            </Grid>
+            <Grid item xs={12} sm={3} md={2}>
+              <div className="logoContainer">
+                {" "}
+                <img
+                  src={TBC}
+                  alt="TBC"
+                  className="AllLogos"
+                  draggable="false"
+                />
+              </div>
+            </Grid>
+            <Grid item xs={12} sm={3} md={2}>
+              <div className="logoContainer">
                 <img
                   src={DavyAssociates}
                   alt="DavyAssociates Logo"
@@ -312,17 +362,7 @@ function Contact() {
                 />
               </div>
             </Grid>
-            <Grid item xs={12} sm={3} md={2}>
-              <div className="logoContainer">
-                {" "}
-                <img
-                  src={AskRupert}
-                  alt="AskRupert"
-                  className="LogoWithRadius"
-                  draggable="false"
-                />
-              </div>
-            </Grid>
+           
             <Grid item xs={12} sm={3} md={2}>
               <div className="logoContainer">
                 {" "}
@@ -345,17 +385,7 @@ function Contact() {
                 />
               </div>
             </Grid>
-            <Grid item xs={12} sm={3} md={2}>
-              <div className="logoContainer">
-                {" "}
-                <img
-                  src={Brash}
-                  alt="Brash"
-                  className="AllLogos"
-                  draggable="false"
-                />
-              </div>
-            </Grid>
+
             <Grid item xs={12} sm={3} md={2}>
               <div className="logoContainer">
                 {" "}
@@ -400,17 +430,7 @@ function Contact() {
                 />
               </div>
             </Grid>
-            <Grid item xs={12} sm={3} md={2}>
-              <div className="logoContainer">
-                {" "}
-                <img
-                  src={EIC}
-                  alt="EIC"
-                  className="AllLogos"
-                  draggable="false"
-                />
-              </div>
-            </Grid>
+
             <Grid item xs={12} sm={3} md={2}>
               <div className="logoContainer">
                 {" "}
@@ -451,28 +471,6 @@ function Contact() {
                   src={Greens}
                   alt="Greens"
                   className="LogoWithRadius"
-                  draggable="false"
-                />
-              </div>
-            </Grid>
-            <Grid item xs={12} sm={3} md={2}>
-              <div className="logoContainer">
-                {" "}
-                <img
-                  src={HJP}
-                  alt="HJP"
-                  className="AllLogos"
-                  draggable="false"
-                />
-              </div>
-            </Grid>
-            <Grid item xs={12} sm={3} md={2}>
-              <div className="logoContainer">
-                {" "}
-                <img
-                  src={HSD}
-                  alt="HSD"
-                  className="AllLogos"
                   draggable="false"
                 />
               </div>
@@ -531,9 +529,9 @@ function Contact() {
               <div className="logoContainer">
                 {" "}
                 <img
-                  src={TBC}
-                  alt="TBC"
-                  className="AllLogos"
+                  src={AskRupert}
+                  alt="AskRupert"
+                  className="LogoWithRadius"
                   draggable="false"
                 />
               </div>

@@ -1,42 +1,7 @@
-/** @format */
-
 import React from "react";
 import "../pagescss/Privacy.css";
-import { makeStyles } from "@material-ui/core/styles";
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import TableContainer from "@material-ui/core/TableContainer";
-import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
-import Paper from "@material-ui/core/Paper";
 
-function createData(name, calories, fat) {
-  return { name, calories, fat };
-}
 
-const rows = [
-  createData(
-    "To respond to your enquiry raised using our enquiry form on our website",
-    "(a) Identity (b) Contact",
-    "(a) Necessary for our legitimate interests (for running a business)"
-  ),
-  createData(
-    "To manage our relationship with you which will include:(a) Notifying you about changes to our terms or privacy policy",
-    "(a) Identity (b) Contact (c) Profile (d) Marketing and Communications",
-    "(a) Performance of a contract with you (b) Necessary to comply with a legal obligation"
-  ),
-  createData(
-    "To administer and protect our business and this website (including troubleshooting, data analysis, testing, system maintenance, support)",
-    "(a) Identity (b) Contact (c) Technical",
-    "(a) Necessary for our legitimate interests (for running our business, provision of administration and IT services, network security, to prevent fraud and in the context of a business reorganisation or group restructuring exercise) (b) Necessary to comply with a legal obligation"
-  ),
-  createData(
-    "To make suggestions and recommendations to you about goods or services that may be of interest to you",
-    "(a) Identity (b) Contact(c) Technical (d) Usage(e) Profile",
-    "Necessary for our legitimate interests (to develop our products/services and grow our business)"
-  ),
-];
 
 function Privacy() {
   return (

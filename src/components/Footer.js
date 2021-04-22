@@ -18,20 +18,22 @@ function Footer() {
         <div className="footerTop">
           <p className="footerTitle"> © Copyright 2021 Just2Connect</p>
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/company/just2connect-ltd/about/"
             className="footerClickableIcons"
             target="_blank"
+            rel="noreferrer"
           >
             <img src={LinkedinFooter} alt="LinkedIn" className="socialIcon" />{" "}
           </a>
           <a
-            href="https://twitter.com/"
+            href="https://twitter.com/just2connect"
             className="footerClickableIcons"
             target="_blank"
+            rel="noreferrer"
           >
             <img src={TwitterFooter} alt="Twitter" className="socialIcon" />{" "}
           </a>
-          <a href="/Contact" className="footerClickableIcons" target="_blank">
+          <a href="/Contact" className="footerClickableIcons" target="_blank" rel="noreferrer">
             <img src={EmailFooter} alt="Email" className="socialIcon" />{" "}
           </a>
           <div>
@@ -59,7 +61,7 @@ function Footer() {
           <div>
             <p className="footerBottomText">
               Just2Connect Ltd, a company registered in England and Wales with
-              company number 07487493, registered office: 52A Western Road,
+              company number 06860886, registered office: 52A Western Road,
               Tring, Herts, HP23 4BB
             </p>
           </div>

@@ -11,7 +11,7 @@ import FAQItem from "../FAQItem.js";
 
 
 // Icons and Images
-import Peanut from "../../images/ProductPage/nutshellIcon.svg";
+import Peanut from "../../images/ProductPage/PinkNutshell.svg";
 import BroadbandHero from "../../images/ProductPage/broadbandHero.svg";
 import Speed1 from "../../images/ProductPage/Speed1.svg";
 import Speed2 from "../../images/ProductPage/Speed2.svg";
@@ -76,13 +76,13 @@ function Broadband() {
           We have partnered with the UK's leading award-winning ISP. This gives
           us the best connectivity at very competitive prices. Plus full service
           provisioning and a comprehensive range of fault diagnostic tools, all
-          available within our portal
+          available within our portal.
         </p>
         <p className="descriptionText">
           Our expertise and experience helps select the best option for your
           broadband needs. We manage the installation and monitor the
           performance so that you can be sure you are getting the best from
-          your connection
+          your connection.
         </p>
       </div>
 
@@ -103,32 +103,32 @@ function Broadband() {
           >
             <FeatureItem
               featureTitle="Unlimited Data Allowance"
-              featureDescription="All of our broadband connections provide you will unlimited data allowance"
+              featureDescription="All of our broadband connections provide you with unlimited data allowance."
               LargeGrid = {4}
             />
             <FeatureItem
               featureTitle="Free Static IP Address"
-              featureDescription="Access your computer and files from anywhere in the world"
+              featureDescription="Access your computer and files from anywhere in the world."
               LargeGrid = {4}
             />
             <FeatureItem
               featureTitle="UK Support"
-              featureDescription="No scripts, just friendly experts when you need us"
+              featureDescription="No scripts, just friendly experts when you need us."
               LargeGrid = {4}
             />
             <FeatureItem
               featureTitle="Lifetime Price Guarantee"
-              featureDescription="At the end of your contract, we won't increase your price"
+              featureDescription="At the end of your contract, we won't increase your price."
               LargeGrid = {4}
             />
             <FeatureItem
               featureTitle="Phone Line Rental"
-              featureDescription="When you need it, combine broadband with line rental in one great value package"
+              featureDescription="When you need it, combine broadband with line rental in one great value package."
               LargeGrid = {4}
             />
             <FeatureItem
               featureTitle="We’ll Never Slow You Down"
-              featureDescription="You’ll always get the fastest speed available, any time of day"
+              featureDescription="You’ll always get the fastest speed available, any time of day."
               LargeGrid = {4}
             />
             </Grid>
@@ -142,8 +142,8 @@ function Broadband() {
       <div className="ContentTitle">Broadband Speeds</div>
       <div className="ColumnServices">
         <p className="HeroSubtitle">
-          Unlimited Data Allowance <b>|</b> Free Static IP Address <b>|</b>{" "}
-          Award Winning ISP
+          Unlimited Data Allowance <b>|</b> Free Static IP Address <b>| </b>
+           Award Winning ISP
         </p>
       </div>
 
@@ -261,7 +261,7 @@ function Broadband() {
           Answer="   Generally speaking, the best broadband is the fastest you can get.
           Standard ADSl is available everywhere, FTTC is available in most
           areas, whilst FTTP is only available in limited locations (at the
-          moment)"
+          moment)."
         />
         <FAQItem
           Question="What are the different types of broadband?"
@@ -289,6 +289,10 @@ function Broadband() {
           {
             <div>
             <p className="faq4text">
+                          <p className="faq4text">
+              Prices range from £25/month for standard ADSL broadband,
+              £40/month for FTTC to £65/month for FTTP.
+            </p>
               You need to consider the following factors when selecting your
               broadband:
             </p>
@@ -304,10 +308,7 @@ function Broadband() {
               Usually a business will require most of the above, with
               responsive support arrangements.
             </p>
-            <p className="faq4text">
-              Prices range from £25/month for standard ADSL broadband,
-              £40/month for FTTC to £65/month for FTTP
-            </p>
+
           </div>
           }
         />
