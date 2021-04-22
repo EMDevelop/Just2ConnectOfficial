@@ -435,7 +435,7 @@ function Home() {
                 <div className="benefitDescriptionContainer">
                   <p className="BenefitDescription">
                     Our friendly team provide a first-class local service. Don't
-                    just take our word, check out our customer reviews below.
+                    just take our word for it, check out our customer reviews below.
                   </p>
                 </div>
               </div>
@@ -453,7 +453,7 @@ function Home() {
                   />
                 </div>
                 <div className="benefitTitleContainer">
-                  <h1 className="BenefitTitle">Short term Contracts</h1>
+                  <h1 className="BenefitTitle">Short-term Contracts</h1>
                 </div>
                 <div className="benefitDescriptionContainer">
                   <p className="BenefitDescription">

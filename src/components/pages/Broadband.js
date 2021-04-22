@@ -73,7 +73,7 @@ function Broadband() {
         </div>
         <h1 className="nutshell">In a nutshell...</h1>
         <p className="descriptionText">
-          We have partnered with the UK's leading award-winning ISP. This gives
+          We have partnered with the UK's leading, award-winning ISP. This gives
           us the best connectivity at very competitive prices. Plus full service
           provisioning and a comprehensive range of fault diagnostic tools, all
           available within our portal.

@@ -38,7 +38,7 @@ function VideoConferencing() {
         <Grid container spacing={3} className={classes.grid}>
           <Grid item xs={12} sm={12} md={7}>
             <div className="HeroSloganPP">
-              <h1 className="HeroTitle">Web Video Conferencing</h1>
+              <h1 className="HeroTitle">Video Conferencing</h1>
               <p className="HeroSubtitle">
                 Video Conferencing <b>|</b> Comunicate Face To Face
               </p>

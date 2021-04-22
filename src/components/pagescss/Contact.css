@@ -1,24 +1,22 @@
 /* Hero? */
 .ContactHero {
   width: 100%;
-  min-height: 20vh;
+  min-height: 70vh;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 10%;
+
   text-align: left;
-  color: var(--colourTextBlue);
   padding-top: 5%;
   padding-bottom: 5%;
-  padding-left: 20%;
-  padding-right: 20%;
+  color: var(--colourTextDark);
 }
 
 .ContactHeroText {
-
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 3.5rem;
   color: var(--colourTextDark);
-  text-align: left;
 
 }
 
@@ -29,6 +27,7 @@
   color: var(--colourTextGrey);
   text-align: left;
 
+  /* padding-right: 5%; */
 }
 
 /*-------------------------- New Contact us--------------------------------- */
