@@ -40,7 +40,7 @@
        <changefreq>never</changefreq>
    </url>
 
-   </url>
+ 
       <url>
       <loc>https://www.just2connect.co.uk/SIPTrunks</loc>
       <lastmod>2021-04-22</lastmod>
@@ -65,3 +65,5 @@
       <lastmod>2021-04-22</lastmod>
        <changefreq>never</changefreq>
    </url>
+
+</urlset>
