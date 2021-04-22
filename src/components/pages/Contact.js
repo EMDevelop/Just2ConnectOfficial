@@ -131,7 +131,7 @@ function Contact() {
                   />
                 </div>
                 <div className="mainText">
-                  <p className="ContactText">01442 573573</p>
+                  <p className="ContactText">01442 573030</p>
                 </div>
               </div>
 
