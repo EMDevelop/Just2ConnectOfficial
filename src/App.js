@@ -45,6 +45,11 @@ function App() {
                   <Route path='/About' exact component ={About}/>
                   <Route path='/Contact' exact component ={Contact}/>
                   <Route path='/Privacy' exact component ={Privacy}/>
+                  <Route path='/company-information' exact component ={About}/>
+                  <Route path='/mobile-phones' exact component ={MobileSIM}/>
+                  <Route path='/mobile-worker' exact component ={TelephoneSystems}/>
+                  <Route path='/home/how-to-help/' exact component ={Home}/>
+                  <Route path='/multiple-sites/' exact component ={TelephoneSystems}/>
                 </Switch>
               <Footer/>
               </div>
