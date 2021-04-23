@@ -22,6 +22,7 @@ return (
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
+            <Nav.Link className = 'NavLinks' href="/">Home</Nav.Link>
             <Nav.Link className = 'NavLinks' href="/TelephoneSystems">Telephone Systems</Nav.Link>
             <Nav.Link className = 'NavLinks' href="/Broadband">Broadband</Nav.Link>
             <NavDropdown title="Other Services" 
