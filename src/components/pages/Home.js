@@ -147,13 +147,14 @@ function Home() {
           <Grid item xs={12} sm={12} md={6} lg={3}>
             <ScrollAnimation animateIn="slideInUp" duration={0.6} delay={300} animateOnce={true}>
               <div className="ServicesContainerOuter">
-                <div className="servicesIcon">
+                <a className="servicesIcon" href="/TelephoneSystems"> 
                   <img
                     src={PinkDeskPhone}
                     alt="Best Telephone Systems In Hertfordshire"
                     className="ServicesIMG"
+                    href="/TelephoneSystems"
                   />
-                </div>
+                </a>
                 <div className="ServicesTitle">
                   <h1 className="outServicesHeader">Telephone Systems</h1>
                 </div>
@@ -175,15 +176,15 @@ function Home() {
           <Grid item xs={12} sm={12} md={6} lg={3}>
             <ScrollAnimation animateIn="slideInUp" duration={0.6} delay={350} animateOnce={true}>
               <div className="ServicesContainerOuter">
-                <div className="servicesIcon">
+              <a className="servicesIcon" href="/Broadband"> 
                   <img
                     src={PinkRouter}
                     alt="Best Business Mobile Sim Card In Hertfordshire"
                     className="ServicesIMG"
                   />
-                </div>
+                </a>
                 <div className="ServicesTitle">
-                  <h1 className="outServicesHeader">Broadband Solutions</h1>
+                  <h1 className="outServicesHeader">Business Broadband</h1>
                 </div>
                 <div className="ServicesDescription">
                   <h2 className="ourServicesDescription">
@@ -201,13 +202,13 @@ function Home() {
           <Grid item xs={12} sm={12} md={6} lg={3}>
             <ScrollAnimation animateIn="slideInUp" duration={0.6} delay={400} animateOnce={true}>
               <div className="ServicesContainerOuter">
-                <div className="servicesIcon">
+              <a className="servicesIcon" href="/VideoConferencing"> 
                   <img
                     src={PinkVideoConf}
                     alt="Best Video Conferencing In Hertfordshire"
                     className="ServicesIMG"
                   />
-                </div>
+                </a>
 
                 <div className="ServicesTitle">
                   <h1 className="outServicesHeader">Video Conferencing</h1>
@@ -228,13 +229,13 @@ function Home() {
           <Grid item xs={12} sm={12} md={6} lg={3}>
             <ScrollAnimation animateIn="slideInUp" duration={0.6} delay={450} animateOnce={true}>
               <div className="ServicesContainerOuter">
-                <div className="servicesIcon">
+              <a className="servicesIcon" href="/MobileSIM"> 
                   <img
                     src={PinkSim}
                     alt="Best Business Mobile Sim Card In Hertfordshire"
                     className="ServicesIMG"
                   />
-                </div>
+                </a>
 
                 <div className="ServicesTitle">
                   <h1 className="outServicesHeader">Mobile SIM Cards</h1>

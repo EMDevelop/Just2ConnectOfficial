@@ -151,6 +151,7 @@ function TelephoneSystems() {
             It’s a technology that lets you make and receive calls over the
             internet instead of using traditional phone lines."
         />
+
         <FAQItem
           Question="Who is this type of telephony suitable for?"
           Answer="Whether your business is mobile, home, or office-based, a cloud-based VoIP system offers a robust, cost-effective solution to your telephony needs. It’s also quick to install, giving you flexibility whether you are setting up or moving office, enjoying rapid growth, or need to take on seasonal staff."
@@ -191,6 +192,26 @@ function TelephoneSystems() {
           Question="What if I already have a phone system?"
           Answer="If your current system doesn’t provide the features or flexibility you need, suffers reliability issues or if you are moving office and need to review your systems, you could benefit from a cheaper, flexible VoIP phone system - give us a call on 01442 573030."
         />
+        <FAQItem
+          Question="Will switching to a new system mean I lose calls for any length of time?"
+          Answer="No, we will organise the switch so that all new phones are in place on the day your numbers ‘port’ onto our system. In that way, the second your number ports, your old phones will stop ringing and your new phones will start."
+        />
+        <FAQItem
+          Question="Will switching mean a lot of work for my organisation?"
+          Answer="No, we will manage the whole process on your behalf. We will ask you the occasional question, but that would be the extent of your involvement."
+        />
+        <FAQItem
+          Question="Will we have to buy new phones?"
+          Answer="It is likely that your existing phones may not be suitable for VoIP telephony. There is a great choice of handsets to select from. You can buy them up front, or we can include them in your monthly subscription."
+        />
+        <FAQItem
+          Question="Can I include all of my call costs in my monthly subscription?"
+          Answer="We have a number of different packages to suit the differing needs of our clients, one of which includes all local, national and mobile numbers."
+        />
+
+
+
+
       </div>
 
       {/* --------------------------------------- */}

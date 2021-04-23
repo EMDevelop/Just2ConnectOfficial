@@ -28,7 +28,7 @@ function ContactUs() {
           console.log(error.text);
         }
       );
-
+      alert("Thanks for getting in touch, our team will reach out to you");
     setStatus("Sent!");
   }
 
