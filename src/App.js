@@ -50,6 +50,7 @@ function App() {
                   <Route path='/mobile-worker' exact component ={TelephoneSystems}/>
                   <Route path='/home/how-to-help/' exact component ={Home}/>
                   <Route path='/multiple-sites/' exact component ={TelephoneSystems}/>
+                  <Route path='/office/' exact component ={TelephoneSystems}/>
                 </Switch>
               <Footer/>
               </div>
