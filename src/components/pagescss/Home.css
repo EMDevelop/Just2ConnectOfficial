@@ -5,6 +5,12 @@
 
 /* ----------------------------------------------------------------- */
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .MainBanner-container {
   min-height: 100vh;
   height: fit-content;
