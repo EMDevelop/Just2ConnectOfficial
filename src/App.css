@@ -53,6 +53,8 @@ body {
   background-repeat: repeat;
   font-family: muli !important;
   color: var(--colourTextGrey);
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 * {
