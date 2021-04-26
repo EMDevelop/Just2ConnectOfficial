@@ -50,7 +50,7 @@ function Home() {
   return (
     <>
       <div className="MainBanner-container">
-        <Grid container spacing={3} className={classes.grid}>
+        <Grid container spacing={0} className={classes.grid}>
 
           
 
@@ -138,7 +138,7 @@ function Home() {
 
         <Grid
           container
-          spacing={2}
+          spacing={0}
           className="outerGrid"
           align="center"
           justify="center"
@@ -366,7 +366,7 @@ function Home() {
 
         <Grid
           container
-          spacing={5}
+          spacing={0}
           className="outerGrid"
           align="center"
           justify="center"
