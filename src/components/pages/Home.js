@@ -49,11 +49,10 @@ function Home() {
 
   return (
     <>
-      <div className="MainBanner-container">
+      {/* <div className="MainBanner-container">
         <Grid container spacing={0} className={classes.grid}>
 
           
-
               <Grid item xs={12} sm={12} md={5} lg={5}>
                 <div className="HeroImage">
 
@@ -68,7 +67,6 @@ function Home() {
               </Grid>
 
            
-
                 <Grid item xs={12} sm={12} md={7} lg={7}>
 
                 <div className="titlewrapper">
@@ -116,9 +114,7 @@ function Home() {
             </div>
           </Grid>
         </Grid>
-      </div>
-
-      {/* <div className='transparentSection'></div>    */}
+      </div> */}
 
       {/* ---------------------------------------------------------------------------------------------------------------------------- */}
 
