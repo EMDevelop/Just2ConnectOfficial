@@ -474,9 +474,9 @@ body {
 
 
 @media screen and (max-width: 959px) {
-.AboutUsIMGOne {
-  display: none;
-}
+  .AboutUsIMGOne {
+    display: none;
+  }
 }
 
 

@@ -476,7 +476,7 @@ function Home() {
       {/* trusted by */}
 
       {/* ---------------------------------------------------------------------------------------------------------------------------- */}
-
+{/* 
       <div className="TrustedBy-container">
         <h1 className="trustedByTitle">Trusted By</h1>
 
@@ -656,9 +656,7 @@ function Home() {
           </div>
 
         </Carousel>
-      </div>
-
-      {/* <div className='transparentSection'></div>    */}
+      </div> */}
 
       <div className="HomeContactUs">
         <ContactUs />
