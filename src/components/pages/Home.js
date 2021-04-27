@@ -49,19 +49,19 @@ function Home() {
 
   return (
     <>
-      {/* <div className="MainBanner-container">
+      <div className="MainBanner-container">
         <Grid container spacing={0} className={classes.grid}>
 
           
               <Grid item xs={12} sm={12} md={5} lg={5}>
                 <div className="HeroImage">
-
+{/* 
                     <img
                       src={HeroImage}
                       alt="Business Phone System Just2Connect"
                       className="Hero_Stock_Image"
                       draggable="false"
-                    />
+                    /> */}
 
                 </div>
               </Grid>
@@ -114,7 +114,7 @@ function Home() {
             </div>
           </Grid>
         </Grid>
-      </div> */}
+      </div>
 
       {/* ---------------------------------------------------------------------------------------------------------------------------- */}
 
@@ -253,7 +253,7 @@ function Home() {
 
       {/* ---------------------------------------------------------------------------------------------------------------------------- */}
 
-      {/* <div className="AboutContainer">
+      <div className="AboutContainer">
         <Grid
           container
           spacing={0}
@@ -286,11 +286,11 @@ function Home() {
                 delay={0}
                 animateOnce={true}
               >
-                <img
+                {/* <img
                   src={WelcomeIllustration1}
                   alt="Best Business Mobile Sim Card In Hertfordshire"
                   className="AboutUsIMGOne"
-                />
+                /> */}
               </ScrollAnimation>
             </div>
           </Grid>
@@ -300,11 +300,11 @@ function Home() {
           <Grid item xs={12} md={4} lg={4}>
             <div className="AboutUsImages">
               <ScrollAnimation animateIn="slideInLeft" duration={0.6} delay={0} animateOnce={true}>
-                <img
+                {/* <img
                   src={WelcomeIllustration2}
                   alt="Best Business Mobile Sim Card In Hertfordshire"
                   className="AboutUsIMGTwo"
-                />
+                /> */}
               </ScrollAnimation>
             </div>
           </Grid>
@@ -340,7 +340,7 @@ function Home() {
             </ScrollAnimation>
           </Grid>
         </Grid>
-      </div> */}
+      </div>
 
       <div className="transparentSection"></div>
 
