@@ -49,7 +49,7 @@ function Home() {
 
   return (
     <>
-      <div className="MainBanner-container">
+      {/* <div className="MainBanner-container">
         <Grid container spacing={0} className={classes.grid}>
 
           
@@ -114,7 +114,7 @@ function Home() {
             </div>
           </Grid>
         </Grid>
-      </div>
+      </div> */}
 
       {/* ---------------------------------------------------------------------------------------------------------------------------- */}
 
