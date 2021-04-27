@@ -76,7 +76,7 @@ body {
 .HeroCompanySlogan{
   letter-spacing: 3px;
   /* font-size: 1rem; */
-  font-size: 2vh;
+  font-size: 1.2rem;
   font-weight: bold;
   text-align: left;
   color: var(--colourPop);
@@ -87,21 +87,21 @@ body {
 .Slogan {
   letter-spacing: 2px;
   /* font-size: 3.2rem; */
-  font-size: 5.5vh;
+  font-size: 3.5rem;
   font-weight: normal;
   text-align: left; 
 }
 
 .Slogan b {
   font-weight: bold;
-  font-size: 5.5vh;
+  font-size: 3.5vh;
 }
 
 .SloganDescription {
   padding-top: 30px;
   letter-spacing: 1px;
   /* font-size: 1.5rem; */
-  font-size: 3vh;
+  font-size: 1.2rem;
   text-align: left;
   font-weight: normal;
 }
@@ -141,7 +141,6 @@ body {
 
 .OurServicesTitle {
   font-size: 2.25rem;
-  /* font-size: 4.5vh; */
   color: var(--colourTextDark);
   text-align: center;
   letter-spacing: 1px;
@@ -164,7 +163,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   min-height: 400px;
 
 }

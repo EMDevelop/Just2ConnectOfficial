@@ -56,19 +56,14 @@ function Home() {
 
               <Grid item xs={12} sm={12} md={5} lg={5}>
                 <div className="HeroImage">
-                  {/* <ScrollAnimation
-                    animateIn="slideInLeft"
-                    duration={0.4}
-                    delay={50}
-                    animateOnce={true}
-                  > */}
+
                     <img
                       src={HeroImage}
                       alt="Business Phone System Just2Connect"
                       className="Hero_Stock_Image"
                       draggable="false"
                     />
-                  {/* </ScrollAnimation> */}
+
                 </div>
               </Grid>
 
@@ -476,7 +471,7 @@ function Home() {
       {/* trusted by */}
 
       {/* ---------------------------------------------------------------------------------------------------------------------------- */}
-{/* 
+
       <div className="TrustedBy-container">
         <h1 className="trustedByTitle">Trusted By</h1>
 
@@ -656,7 +651,7 @@ function Home() {
           </div>
 
         </Carousel>
-      </div> */}
+      </div>
 
       <div className="HomeContactUs">
         <ContactUs />
