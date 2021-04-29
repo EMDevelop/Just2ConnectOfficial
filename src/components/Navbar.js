@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import {Navbar,Nav,NavDropdown,Button} from "react-bootstrap";
 import './Navbar.css'
-import MainLogo from '../images/Logo.png'
+// import MainLogo from '../images/Logo.png'
+import MainLogo from '../images/Just2Connect_Logo.png'
 import WhitePinkPhone from '../images/icons/WhitePinkPhone.png'
 
 function NavigationBar() {
