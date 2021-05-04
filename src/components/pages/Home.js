@@ -267,7 +267,7 @@ function Home() {
                 <h2 className="aboutHeading1">Welcome to Just2Connect</h2>
                 <h2 className="aboutHeading2">
                   Business Telephone Systems & Broadband in Hertfordshire,
-                  Bedfordshire & Buckinghamshire
+                  Bedfordshire & Buckinghamshire....and beyond
                 </h2>
 
                 <p className="aboutParagraph">
