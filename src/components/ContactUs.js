@@ -1,11 +1,12 @@
-
 import React, { useState } from "react";
 import "./ContactUs.css";
 import emailjs from "emailjs-com";
 
-
 function ContactUs() {
   const [status, setStatus] = useState("Submit");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   //setStatus("Sending...");
 
@@ -28,8 +29,12 @@ function ContactUs() {
           console.log(error.text);
         }
       );
-      alert("Thanks for getting in touch, our team will reach out to you");
+    alert("Thanks for getting in touch, our team will reach out to you");
     setStatus("Sent!");
+    setName("");
+    setEmail("");
+    setMessage("");
+    setStatus("Submit");
   }
 
   return (
@@ -46,6 +51,8 @@ function ContactUs() {
               required
               placeholder="Your Name"
               name="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
           </div>
           <div className="formItem">
@@ -56,6 +63,8 @@ function ContactUs() {
               required
               placeholder="Your Email"
               name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="formItem">
@@ -65,6 +74,8 @@ function ContactUs() {
               required
               placeholder="Optional short message"
               name="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             />
           </div>
 
