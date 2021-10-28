@@ -1,4 +1,4 @@
-Welcome to my first ever website, build from scratch using ReactJS for a local Telephone Systems business Just2Connect.
+Welcome to my first ever website, built from scratch using ReactJS for a local Telephone Systems business Just2Connect.
 
 See www.just2connect.co.uk
 
