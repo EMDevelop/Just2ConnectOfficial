@@ -12,7 +12,7 @@
     "bootstrap": "^4.6.0",
     "emailjs-com": "^2.6.4",
     "pathseg": "^1.2.0",
-    "react": "^17.0.2",
+    "react": "^16.8.0",
     "react-animate-on-scroll": "^2.1.5",
     "react-animated-css": "^1.2.1",
     "react-bootstrap": "^1.5.2",
