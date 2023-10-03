@@ -93,10 +93,10 @@ function Home() {
                 >
                   <h1 className='SloganDescription'>
                     We are your local provider in Herts, Beds and Bucks. Whether
-                    you need cloud-based telephony, a new number or
-                    business-strength broadband, we will provide the right
-                    solution for your business, at a price you can afford - all
-                    with exceptional service.
+                    you need <strong>cloud-based telephony</strong>, a new
+                    number or <strong>business-strength broadband</strong>, we
+                    will provide the right solution for your business, at a
+                    price you can afford - all with exceptional service.
                   </h1>
                 </ScrollAnimation>
               </div>
@@ -281,7 +281,7 @@ function Home() {
                 <h2 className='aboutHeading1'>Welcome to Just2Connect</h2>
                 <h2 className='aboutHeading2'>
                   Business Telephone Systems & Broadband in Hertfordshire,
-                  Bedfordshire & Buckinghamshire....and beyond
+                  Bedfordshire & Buckinghamshire... and beyond
                 </h2>
 
                 <p className='aboutParagraph'>
@@ -338,16 +338,19 @@ function Home() {
               <div className='aboutTextConainer'>
                 <p className='aboutParagraph'>
                   Our professional, friendly, solution-focussed team provide a
-                  first-class local service ensuring our customer needs are at
-                  the forefront of everything else.
+                  first-class <strong>local service</strong> ensuring our
+                  customer needs are at the forefront of everything else.
                 </p>
                 <p className='aboutParagraph'>
                   We offer a range of telephone products and services with
-                  particular emphasis on working from multiple locations, whilst
-                  still being part of the 'office' phone system. This means that
+                  particular emphasis on{" "}
+                  <strong>working from multiple locations</strong>, whilst still
+                  being part of the 'office' phone system. This means that
                   wherever you are, or whatever device is available (desk phone,
-                  computer, tablet or mobile phone), your will always stay
-                  connected to your customers.
+                  computer, tablet or mobile phone),{" "}
+                  <strong>
+                    you will always stay connected to your customers.
+                  </strong>
                 </p>
                 <p className='aboutParagraph'>
                   We provide a number of broadband options, speeds and
