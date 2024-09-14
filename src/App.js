@@ -30,38 +30,28 @@ function App() {
           <div id='wrapper'>
             <NavigationBar />
             <Routes>
-              <Route path='/' exact component={Home} />
+              <Route path='/' element={<Home />} />
               <Route
                 path='/VideoConferencing'
-                exact
-                component={VideoConferencing}
+                element={<VideoConferencing />}
               />
-              <Route path='/MobileSIM' exact component={MobileSIM} />
+              <Route path='/MobileSIM' element={<MobileSIM />} />
               <Route
                 path='/VirtualPhoneNumbers'
-                exact
-                component={VirtualPhoneNumbers}
+                element={<VirtualPhoneNumbers />}
               />
-              <Route path='/SIPTrunks' exact component={SIPTrunks} />
-              <Route
-                path='/TelephoneSystems'
-                exact
-                component={TelephoneSystems}
-              />
-              <Route path='/Broadband' exact component={Broadband} />
-              <Route path='/About' exact component={About} />
-              <Route path='/Contact' exact component={Contact} />
-              <Route path='/Privacy' exact component={Privacy} />
-              <Route path='/company-information' exact component={About} />
-              <Route path='/mobile-phones' exact component={MobileSIM} />
-              <Route path='/mobile-worker' exact component={TelephoneSystems} />
-              <Route path='/home/how-to-help/' exact component={Home} />
-              <Route
-                path='/multiple-sites/'
-                exact
-                component={TelephoneSystems}
-              />
-              <Route path='/office/' exact component={TelephoneSystems} />
+              <Route path='/SIPTrunks' element={<SIPTrunks />} />
+              <Route path='/TelephoneSystems' element={<TelephoneSystems />} />
+              <Route path='/Broadband' element={<Broadband />} />
+              <Route path='/About' element={<About />} />
+              <Route path='/Contact' element={<Contact />} />
+              <Route path='/Privacy' element={<Privacy />} />
+              <Route path='/company-information' element={<About />} />
+              <Route path='/mobile-phones' element={<MobileSIM />} />
+              <Route path='/mobile-worker' element={<TelephoneSystems />} />
+              <Route path='/home/how-to-help/' element={<Home />} />
+              <Route path='/multiple-sites/' element={<TelephoneSystems />} />
+              <Route path='/office/' element={<TelephoneSystems />} />
             </Routes>
             <Footer />
           </div>
