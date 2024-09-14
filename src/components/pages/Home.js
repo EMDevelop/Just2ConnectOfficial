@@ -8,7 +8,6 @@ import ContactUs from "../ContactUs.js";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
 import Carousel from "react-elastic-carousel";
-import ScrollAnimation from "react-animate-on-scroll";
 
 // Icons and Images
 import FiveStars from "../../images/icons/FiveStars.svg";
@@ -64,41 +63,22 @@ function Home() {
 
           <Grid item xs={12} sm={12} md={7} lg={7}>
             <div className='titlewrapper'>
-              <ScrollAnimation
-                animateIn='slideInRight'
-                duration={0.4}
-                animateOnce={true}
-              >
-                <h1 className='HeroCompanySlogan'>
-                  STAY CONNECTED TO YOUR CUSTOMERS
-                </h1>
-              </ScrollAnimation>
+              <h1 className='HeroCompanySlogan'>
+                STAY CONNECTED TO YOUR CUSTOMERS
+              </h1>
 
               <div className='HeroSlogan'>
-                <ScrollAnimation
-                  animateIn='slideInRight'
-                  duration={0.5}
-                  animateOnce={true}
-                >
-                  <h1 className='Slogan'>
-                    Business Telephone Systems & Broadband
-                  </h1>
-                </ScrollAnimation>
+                <h1 className='Slogan'>
+                  Business Telephone Systems & Broadband
+                </h1>
 
-                <ScrollAnimation
-                  animateIn='slideInRight'
-                  duration={0.6}
-                  delay={1400}
-                  animateOnce={true}
-                >
-                  <h1 className='SloganDescription'>
-                    We are your local provider in Herts, Beds and Bucks. Whether
-                    you need <strong>cloud-based telephony</strong>, a new
-                    number or <strong>business-strength broadband</strong>, we
-                    will provide the right solution for your business, at a
-                    price you can afford - all with exceptional service.
-                  </h1>
-                </ScrollAnimation>
+                <h1 className='SloganDescription'>
+                  We are your local provider in Herts, Beds and Bucks. Whether
+                  you need <strong>cloud-based telephony</strong>, a new number
+                  or <strong>business-strength broadband</strong>, we will
+                  provide the right solution for your business, at a price you
+                  can afford - all with exceptional service.
+                </h1>
               </div>
             </div>
           </Grid>
@@ -112,9 +92,7 @@ function Home() {
       {/* ---------------------------------------------------------------------------------------------------------------------------- */}
 
       <div className='OurServices-container'>
-        <ScrollAnimation animateIn='fadeIn' duration={1} animateOnce={true}>
-          <h1 className='OurServicesTitle'>Our Services</h1>
-        </ScrollAnimation>
+        <h1 className='OurServicesTitle'>Our Services</h1>
 
         <Grid
           container
@@ -125,133 +103,105 @@ function Home() {
           alignItems='center'
         >
           <Grid item xs={12} sm={12} md={6} lg={3}>
-            <ScrollAnimation
-              animateIn='slideInUp'
-              duration={0.6}
-              delay={300}
-              animateOnce={true}
-            >
-              <div className='ServicesContainerOuter'>
-                <a className='servicesIcon' href='/TelephoneSystems'>
-                  <img
-                    src={PinkDeskPhone}
-                    alt='Best Telephone Systems In Hertfordshire'
-                    className='ServicesIMG'
-                    href='/TelephoneSystems'
-                  />
-                </a>
-                <div className='ServicesTitle'>
-                  <h1 className='outServicesHeader'>Telephone Systems</h1>
-                </div>
-                <div className='ServicesDescription'>
-                  <h2 className='ourServicesDescription'>
-                    Mobile, office or home based, you can <b>connect</b> with
-                    your Customers wherever you are
-                  </h2>
-                </div>
-                <a className='learnMoreButton' href='/TelephoneSystems'>
-                  <p className='learnMoreText'>Learn More</p>
-                </a>
+            <div className='ServicesContainerOuter'>
+              <a className='servicesIcon' href='/TelephoneSystems'>
+                <img
+                  src={PinkDeskPhone}
+                  alt='Best Telephone Systems In Hertfordshire'
+                  className='ServicesIMG'
+                  href='/TelephoneSystems'
+                />
+              </a>
+              <div className='ServicesTitle'>
+                <h1 className='outServicesHeader'>Telephone Systems</h1>
               </div>
-            </ScrollAnimation>
+              <div className='ServicesDescription'>
+                <h2 className='ourServicesDescription'>
+                  Mobile, office or home based, you can <b>connect</b> with your
+                  Customers wherever you are
+                </h2>
+              </div>
+              <a className='learnMoreButton' href='/TelephoneSystems'>
+                <p className='learnMoreText'>Learn More</p>
+              </a>
+            </div>
           </Grid>
 
           {/* Broadband */}
 
           <Grid item xs={12} sm={12} md={6} lg={3}>
-            <ScrollAnimation
-              animateIn='slideInUp'
-              duration={0.6}
-              delay={350}
-              animateOnce={true}
-            >
-              <div className='ServicesContainerOuter'>
-                <a className='servicesIcon' href='/Broadband'>
-                  <img
-                    src={PinkRouter}
-                    alt='Best Business Mobile Sim Card In Hertfordshire'
-                    className='ServicesIMG'
-                  />
-                </a>
-                <div className='ServicesTitle'>
-                  <h1 className='outServicesHeader'>Business Broadband</h1>
-                </div>
-                <div className='ServicesDescription'>
-                  <h2 className='ourServicesDescription'>
-                    We provide fast, superfast and <b>ultrafast</b> broadband
-                    for your business
-                  </h2>
-                </div>
-                <a className='learnMoreButton' href='/Broadband'>
-                  <p className='learnMoreText'>Learn More</p>
-                </a>
+            <div className='ServicesContainerOuter'>
+              <a className='servicesIcon' href='/Broadband'>
+                <img
+                  src={PinkRouter}
+                  alt='Best Business Mobile Sim Card In Hertfordshire'
+                  className='ServicesIMG'
+                />
+              </a>
+              <div className='ServicesTitle'>
+                <h1 className='outServicesHeader'>Business Broadband</h1>
               </div>
-            </ScrollAnimation>
+              <div className='ServicesDescription'>
+                <h2 className='ourServicesDescription'>
+                  We provide fast, superfast and <b>ultrafast</b> broadband for
+                  your business
+                </h2>
+              </div>
+              <a className='learnMoreButton' href='/Broadband'>
+                <p className='learnMoreText'>Learn More</p>
+              </a>
+            </div>
           </Grid>
 
           <Grid item xs={12} sm={12} md={6} lg={3}>
-            <ScrollAnimation
-              animateIn='slideInUp'
-              duration={0.6}
-              delay={400}
-              animateOnce={true}
-            >
-              <div className='ServicesContainerOuter'>
-                <a className='servicesIcon' href='/VideoConferencing'>
-                  <img
-                    src={PinkVideoConf}
-                    alt='Best Video Conferencing In Hertfordshire'
-                    className='ServicesIMG'
-                  />
-                </a>
+            <div className='ServicesContainerOuter'>
+              <a className='servicesIcon' href='/VideoConferencing'>
+                <img
+                  src={PinkVideoConf}
+                  alt='Best Video Conferencing In Hertfordshire'
+                  className='ServicesIMG'
+                />
+              </a>
 
-                <div className='ServicesTitle'>
-                  <h1 className='outServicesHeader'>Video Conferencing</h1>
-                </div>
-                <div className='ServicesDescription'>
-                  <h2 className='ourServicesDescription'>
-                    Video, voice and content sharing - a must for{" "}
-                    <b>remote working</b>
-                  </h2>
-                </div>
-                <a className='learnMoreButton' href='/VideoConferencing'>
-                  <p className='learnMoreText'>Learn More</p>
-                </a>
+              <div className='ServicesTitle'>
+                <h1 className='outServicesHeader'>Video Conferencing</h1>
               </div>
-            </ScrollAnimation>
+              <div className='ServicesDescription'>
+                <h2 className='ourServicesDescription'>
+                  Video, voice and content sharing - a must for{" "}
+                  <b>remote working</b>
+                </h2>
+              </div>
+              <a className='learnMoreButton' href='/VideoConferencing'>
+                <p className='learnMoreText'>Learn More</p>
+              </a>
+            </div>
           </Grid>
 
           <Grid item xs={12} sm={12} md={6} lg={3}>
-            <ScrollAnimation
-              animateIn='slideInUp'
-              duration={0.6}
-              delay={450}
-              animateOnce={true}
-            >
-              <div className='ServicesContainerOuter'>
-                <a className='servicesIcon' href='/MobileSIM'>
-                  <img
-                    src={PinkSim}
-                    alt='Best Business Mobile Sim Card In Hertfordshire'
-                    className='ServicesIMG'
-                  />
-                </a>
+            <div className='ServicesContainerOuter'>
+              <a className='servicesIcon' href='/MobileSIM'>
+                <img
+                  src={PinkSim}
+                  alt='Best Business Mobile Sim Card In Hertfordshire'
+                  className='ServicesIMG'
+                />
+              </a>
 
-                <div className='ServicesTitle'>
-                  <h1 className='outServicesHeader'>Mobile SIM Cards</h1>
-                </div>
-
-                <div className='ServicesDescription'>
-                  <h2 className='ourServicesDescription'>
-                    <b>Unlimited</b> calls, texts and data packages on a 30 day
-                    contract
-                  </h2>
-                </div>
-                <a className='learnMoreButton' href='/MobileSIM'>
-                  <p className='learnMoreText'>Learn More</p>
-                </a>
+              <div className='ServicesTitle'>
+                <h1 className='outServicesHeader'>Mobile SIM Cards</h1>
               </div>
-            </ScrollAnimation>
+
+              <div className='ServicesDescription'>
+                <h2 className='ourServicesDescription'>
+                  <b>Unlimited</b> calls, texts and data packages on a 30 day
+                  contract
+                </h2>
+              </div>
+              <a className='learnMoreButton' href='/MobileSIM'>
+                <p className='learnMoreText'>Learn More</p>
+              </a>
+            </div>
           </Grid>
         </Grid>
       </div>
@@ -272,40 +222,26 @@ function Home() {
         >
           <Grid item xs={12} md={8} lg={8}>
             <div className='aboutTextConainer'>
-              <ScrollAnimation
-                animateIn='slideInLeft'
-                duration={0.6}
-                delay={0}
-                animateOnce={true}
-              >
-                <h2 className='aboutHeading1'>Welcome to Just2Connect</h2>
-                <h2 className='aboutHeading2'>
-                  Business Telephone Systems & Broadband in Hertfordshire,
-                  Bedfordshire & Buckinghamshire... and beyond
-                </h2>
+              <h2 className='aboutHeading1'>Welcome to Just2Connect</h2>
+              <h2 className='aboutHeading2'>
+                Business Telephone Systems & Broadband in Hertfordshire,
+                Bedfordshire & Buckinghamshire... and beyond
+              </h2>
 
-                <p className='aboutParagraph'>
-                  Low-cost, flexible and tailored solutions to meet your
-                  business requirements.
-                </p>
-              </ScrollAnimation>
+              <p className='aboutParagraph'>
+                Low-cost, flexible and tailored solutions to meet your business
+                requirements.
+              </p>
             </div>
           </Grid>
 
           <Grid item xs={12} md={4} lg={4}>
             <div className='AboutUsImages'>
-              <ScrollAnimation
-                animateIn='slideInRight'
-                duration={0.6}
-                delay={0}
-                animateOnce={true}
-              >
-                <img
-                  src={WelcomeIllustration1}
-                  alt='Best Business Mobile Sim Card In Hertfordshire'
-                  className='AboutUsIMGOne'
-                />
-              </ScrollAnimation>
+              <img
+                src={WelcomeIllustration1}
+                alt='Best Business Mobile Sim Card In Hertfordshire'
+                className='AboutUsIMGOne'
+              />
             </div>
           </Grid>
         </Grid>
@@ -313,58 +249,44 @@ function Home() {
         <Grid container spacing={0} className={classes.grid}>
           <Grid item xs={12} md={4} lg={4}>
             <div className='AboutUsImages'>
-              <ScrollAnimation
-                animateIn='slideInLeft'
-                duration={0.6}
-                delay={0}
-                animateOnce={true}
-              >
-                <img
-                  src={WelcomeIllustration2}
-                  alt='Best Business Mobile Sim Card In Hertfordshire'
-                  className='AboutUsIMGTwo'
-                />
-              </ScrollAnimation>
+              <img
+                src={WelcomeIllustration2}
+                alt='Best Business Mobile Sim Card In Hertfordshire'
+                className='AboutUsIMGTwo'
+              />
             </div>
           </Grid>
 
           <Grid item xs={12} md={8} lg={8}>
-            <ScrollAnimation
-              animateIn='slideInRight'
-              duration={0.6}
-              delay={0}
-              animateOnce={true}
-            >
-              <div className='aboutTextConainer'>
-                <p className='aboutParagraph'>
-                  Our professional, friendly, solution-focussed team provide a
-                  first-class <strong>local service</strong> ensuring our
-                  customer needs are at the forefront of everything else.
-                </p>
-                <p className='aboutParagraph'>
-                  We offer a range of telephone products and services with
-                  particular emphasis on{" "}
-                  <strong>working from multiple locations</strong>, whilst still
-                  being part of the 'office' phone system. This means that
-                  wherever you are, or whatever device is available (desk phone,
-                  computer, tablet or mobile phone),{" "}
-                  <strong>
-                    you will always stay connected to your customers.
-                  </strong>
-                </p>
-                <p className='aboutParagraph'>
-                  We provide a number of broadband options, speeds and
-                  pricepoints to meet all of your needs.
-                </p>
-                <p className='aboutParagraph'>
-                  <a href='/Contact' className='ContactBoldLink'>
-                    Contact us
-                  </a>
-                  to find out more, we love to chat all things telephony and
-                  broadband.
-                </p>
-              </div>
-            </ScrollAnimation>
+            <div className='aboutTextConainer'>
+              <p className='aboutParagraph'>
+                Our professional, friendly, solution-focussed team provide a
+                first-class <strong>local service</strong> ensuring our customer
+                needs are at the forefront of everything else.
+              </p>
+              <p className='aboutParagraph'>
+                We offer a range of telephone products and services with
+                particular emphasis on{" "}
+                <strong>working from multiple locations</strong>, whilst still
+                being part of the 'office' phone system. This means that
+                wherever you are, or whatever device is available (desk phone,
+                computer, tablet or mobile phone),{" "}
+                <strong>
+                  you will always stay connected to your customers.
+                </strong>
+              </p>
+              <p className='aboutParagraph'>
+                We provide a number of broadband options, speeds and pricepoints
+                to meet all of your needs.
+              </p>
+              <p className='aboutParagraph'>
+                <a href='/Contact' className='ContactBoldLink'>
+                  Contact us
+                </a>
+                to find out more, we love to chat all things telephony and
+                broadband.
+              </p>
+            </div>
           </Grid>
         </Grid>
       </div>
@@ -378,9 +300,7 @@ function Home() {
       {/* ---------------------------------------------------------------------------------------------------------------------------- */}
 
       <div className='whyJ2C-container'>
-        <ScrollAnimation animateIn='fadeIn' duration={1}>
-          <h1 className='WhyJ2CTitle'> Why Just2Connect?</h1>
-        </ScrollAnimation>
+        <h1 className='WhyJ2CTitle'> Why Just2Connect?</h1>
 
         <Grid
           container
@@ -391,119 +311,91 @@ function Home() {
           alignItems='center'
         >
           <Grid item xs={12} md={6}>
-            <ScrollAnimation
-              animateIn='fadeIn'
-              duration={1}
-              delay={100}
-              animateOnce={true}
-            >
-              <div className='benefitContainer'>
-                <div className='illustrationContainer'>
-                  <img
-                    src={WhySupport}
-                    alt='Berkhamsted Telephones'
-                    className='whyJ2CIllustrations'
-                  />
-                </div>
-                <div className='benefitTitleContainer'>
-                  <h1 className='BenefitTitle'>Unlimited Support</h1>
-                </div>
-                <div className='benefitDescriptionContainer'>
-                  <p className='BenefitDescription'>
-                    Service and site visits are included. Gone are those
-                    frustrating support calls or shocking call-out charges.
-                  </p>
-                </div>
+            <div className='benefitContainer'>
+              <div className='illustrationContainer'>
+                <img
+                  src={WhySupport}
+                  alt='Berkhamsted Telephones'
+                  className='whyJ2CIllustrations'
+                />
               </div>
-            </ScrollAnimation>
+              <div className='benefitTitleContainer'>
+                <h1 className='BenefitTitle'>Unlimited Support</h1>
+              </div>
+              <div className='benefitDescriptionContainer'>
+                <p className='BenefitDescription'>
+                  Service and site visits are included. Gone are those
+                  frustrating support calls or shocking call-out charges.
+                </p>
+              </div>
+            </div>
           </Grid>
 
           <Grid item xs={12} md={6}>
-            <ScrollAnimation
-              animateIn='fadeIn'
-              duration={1}
-              delay={200}
-              animateOnce={true}
-            >
-              <div className='benefitContainer'>
-                <div className='illustrationContainer'>
-                  <img
-                    src={WhyPrices}
-                    alt='Berkhamsted Telephones'
-                    className='whyJ2CIllustrations'
-                  />
-                </div>
-
-                <div className='benefitTitleContainer'>
-                  <h1 className='BenefitTitle'>Competitive Pricing</h1>
-                </div>
-
-                <div className='benefitDescriptionContainer'>
-                  <p className='BenefitDescription'>
-                    We promise an affordable and reliable soluiton with
-                    absolutely no hidden costs.
-                  </p>
-                </div>
+            <div className='benefitContainer'>
+              <div className='illustrationContainer'>
+                <img
+                  src={WhyPrices}
+                  alt='Berkhamsted Telephones'
+                  className='whyJ2CIllustrations'
+                />
               </div>
-            </ScrollAnimation>
+
+              <div className='benefitTitleContainer'>
+                <h1 className='BenefitTitle'>Competitive Pricing</h1>
+              </div>
+
+              <div className='benefitDescriptionContainer'>
+                <p className='BenefitDescription'>
+                  We promise an affordable and reliable soluiton with absolutely
+                  no hidden costs.
+                </p>
+              </div>
+            </div>
           </Grid>
 
           <Grid item xs={12} md={6}>
-            <ScrollAnimation
-              animateIn='fadeIn'
-              duration={1}
-              delay={300}
-              animateOnce={true}
-            >
-              <div className='benefitContainer'>
-                <div className='illustrationContainer'>
-                  <img
-                    src={WhyLocation}
-                    alt='Berkhamsted Telephones'
-                    className='whyJ2CIllustrations'
-                  />
-                </div>
-                <div className='benefitTitleContainer'>
-                  <h1 className='BenefitTitle'>Friendly & Local</h1>
-                </div>
-                <div className='benefitDescriptionContainer'>
-                  <p className='BenefitDescription'>
-                    Our friendly team provide a first-class local service. Don't
-                    just take our word for it, check out our customer reviews
-                    below.
-                  </p>
-                </div>
+            <div className='benefitContainer'>
+              <div className='illustrationContainer'>
+                <img
+                  src={WhyLocation}
+                  alt='Berkhamsted Telephones'
+                  className='whyJ2CIllustrations'
+                />
               </div>
-            </ScrollAnimation>
+              <div className='benefitTitleContainer'>
+                <h1 className='BenefitTitle'>Friendly & Local</h1>
+              </div>
+              <div className='benefitDescriptionContainer'>
+                <p className='BenefitDescription'>
+                  Our friendly team provide a first-class local service. Don't
+                  just take our word for it, check out our customer reviews
+                  below.
+                </p>
+              </div>
+            </div>
           </Grid>
 
           <Grid item xs={12} md={6}>
-            <ScrollAnimation
-              animateIn='fadeIn'
-              duration={1}
-              delay={400}
-              animateOnce={true}
-            >
-              <div className='benefitContainer'>
-                <div className='illustrationContainer'>
-                  <img
-                    src={WhyContract}
-                    alt='Berkhamsted Telephones'
-                    className='whyJ2CIllustrations'
-                  />
-                </div>
-                <div className='benefitTitleContainer'>
-                  <h1 className='BenefitTitle'>Short-term Contracts</h1>
-                </div>
-                <div className='benefitDescriptionContainer'>
-                  <p className='BenefitDescription'>
-                    We believe when you choose us you'll never want to leave,
-                    which is why we are confident offering most services on a 30
-                    day contract.
-                  </p>
-                </div>
+            <div className='benefitContainer'>
+              <div className='illustrationContainer'>
+                <img
+                  src={WhyContract}
+                  alt='Berkhamsted Telephones'
+                  className='whyJ2CIllustrations'
+                />
               </div>
-            </ScrollAnimation>
+              <div className='benefitTitleContainer'>
+                <h1 className='BenefitTitle'>Short-term Contracts</h1>
+              </div>
+              <div className='benefitDescriptionContainer'>
+                <p className='BenefitDescription'>
+                  We believe when you choose us you'll never want to leave,
+                  which is why we are confident offering most services on a 30
+                  day contract.
+                </p>
+              </div>
+            </div>
           </Grid>
         </Grid>
       </div>

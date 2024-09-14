@@ -1,20 +1,18 @@
 import React from "react";
 import "../pagescss/Privacy.css";
 
-
-
 function Privacy() {
   return (
     <>
-      <div className="Privacy">
-        <div className="PrivacyTitleSection">
-          <div className="PrivacyPolicyPop">Just2Connect</div>
-          <div className="PrivacyPolicyTitle">Privacy Policy</div>
+      <div className='Privacy'>
+        <div className='PrivacyTitleSection'>
+          <div className='PrivacyPolicyPop'>Just2Connect</div>
+          <div className='PrivacyPolicyTitle'>Privacy Policy</div>
         </div>
 
-        <div className="PrivacyBody" id="sec-1">
-          <div className="PrivacyItem">
-            <h1 className="ItemHeader">About us</h1>
+        <div className='PrivacyBody' id='sec-1'>
+          <div className='PrivacyItem'>
+            <h1 className='ItemHeader'>About us</h1>
             <p>
               We are Just2Connect Ltd, a provider of internet, telephony and
               related services. This privacy notice explains how we use any
@@ -24,7 +22,7 @@ function Privacy() {
               at: 52A Western Rd, Tring, Herts HP23 4BB.
             </p>
 
-            <h1 className="ItemHeader">
+            <h1 className='ItemHeader'>
               What information do we collect about you?
             </h1>
             <p>
@@ -49,7 +47,7 @@ function Privacy() {
               </ul>
             </p>
 
-            <h1 className="ItemHeader">
+            <h1 className='ItemHeader'>
               How will we use the information about you?
             </h1>
             <p>
@@ -61,7 +59,7 @@ function Privacy() {
               provide feedback will be used to improve the services we provide.
             </p>
 
-            <h1 className="ItemHeader">Cookies</h1>
+            <h1 className='ItemHeader'>Cookies</h1>
             <p>
               We use cookies to distinguish between users of our website, to
               collect information about users' online preferences, to provide
@@ -86,7 +84,7 @@ function Privacy() {
               www.allaboutcookies.org and www.youronlinechoices.eu.
             </p>
 
-            <h1 className="ItemHeader">Performance cookies</h1>
+            <h1 className='ItemHeader'>Performance cookies</h1>
             <p>
               We use performance cookies which collect anonymous information on
               how people use our website. For example, we use Google Analytics
@@ -97,7 +95,7 @@ function Privacy() {
               established.
             </p>
 
-            <h1 className="ItemHeader">Use of web beacons</h1>
+            <h1 className='ItemHeader'>Use of web beacons</h1>
             <p>
               Some of our web pages may contain electronic images known as web
               beacons (sometimes known as clear gifs) that allow us to count
@@ -110,7 +108,7 @@ function Privacy() {
               effectiveness of a particular campaign.
             </p>
 
-            <h1 className="ItemHeader">Links to other websites</h1>
+            <h1 className='ItemHeader'>Links to other websites</h1>
             <p>
               Our website may contain links to other websites over which we have
               no control. We are not responsible for privacy policies or
@@ -120,7 +118,7 @@ function Privacy() {
               personal information.
             </p>
 
-            <h1 className="ItemHeader">Call recordings</h1>
+            <h1 className='ItemHeader'>Call recordings</h1>
             <p>
               All support calls made and received by Just2Connect are recorded
               and may be used to support learning and development of our staff.
@@ -132,7 +130,7 @@ function Privacy() {
               information processed by us in line with current legislation.
             </p>
 
-            <h1 className="ItemHeader">How we share information?</h1>
+            <h1 className='ItemHeader'>How we share information?</h1>
             <p>
               Only Just2Connect staff will have access to your information and
               will not share your data with any other third party. Just2Connect
@@ -140,7 +138,7 @@ function Privacy() {
               making, profiling or marketing purposes unless consented too.
             </p>
 
-            <h1 className="ItemHeader">
+            <h1 className='ItemHeader'>
               How long do we keep your personal data?
             </h1>
             <p>
@@ -153,7 +151,7 @@ function Privacy() {
               browsing our website.
             </p>
 
-            <h1 className="ItemHeader">
+            <h1 className='ItemHeader'>
               Legal basis for the processing of your information
             </h1>
             <p>
@@ -173,7 +171,7 @@ function Privacy() {
               to the use of cookies.
             </p>
 
-            <h1 className="ItemHeader">Your rights</h1>
+            <h1 className='ItemHeader'>Your rights</h1>
 
             <ul>
               <p>You have a right to:</p>
@@ -188,15 +186,15 @@ function Privacy() {
                 jurisdiction about our use of your information
               </li>
               <li>in some circumstances:</li>
-              <li className="list2">erase information we hold about you;</li>
-              <li className="list2">
+              <li className='list2'>erase information we hold about you;</li>
+              <li className='list2'>
                 receive a copy of your personal data in an electronic format and
                 require us to provide this information to a third party;
               </li>
-              <li className="list2">
+              <li className='list2'>
                 restrict the use of information we hold about you; and
               </li>
-              <li className="list2">
+              <li className='list2'>
                 object to the use of information we hold about you.
               </li>
             </ul>
@@ -204,12 +202,15 @@ function Privacy() {
               You can exercise these rights by contacting us as detailed below.
             </p>
 
-            <h1 className="ItemHeader">How to contact us</h1>
+            <h1 className='ItemHeader'>How to contact us</h1>
 
-            <p>Data Protection Officer, 52A Western Road, Tring, HP23 4BB</p>
+            <p>
+              Data Protection Officer, The Counting House, High Street, Tring,
+              Hertfordshire, HP23 5TE
+            </p>
             <p>Or, info@just2connect.com</p>
 
-            <h1 className="ItemHeader">How to contact us</h1>
+            <h1 className='ItemHeader'>How to contact us</h1>
             <p>
               You also have the right to raise any concerns about how your
               personal data is being processed by us with the Information
@@ -218,7 +219,7 @@ function Privacy() {
             <p>https://ico.org.uk/concerns</p>
             <p>0303 123 1113</p>
 
-            <h1 className="ItemHeader">Changes to our privacy notice</h1>
+            <h1 className='ItemHeader'>Changes to our privacy notice</h1>
             <p>
               We keep our privacy notice under regular review and we will place
               any updates on this webpage. This privacy notice was last updated

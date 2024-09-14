@@ -14,7 +14,6 @@ import Contact from "./components/pages/Contact";
 import Privacy from "./components/pages/Privacy";
 import Footer from "./components/Footer";
 import "pathseg";
-import ParticlesBackground from "./components/ParticlesBackground.js";
 import ReactGA from "react-ga";
 
 function App() {
@@ -67,9 +66,7 @@ function App() {
             <Footer />
           </div>
         </div>
-        {/* <div id="particles-background">                
-                    <ParticlesBackground/>
-            </div> */}
+  
       </Router>
     </div>
   );
