@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavigationBar from "./components/Navbar";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
@@ -29,7 +29,7 @@ function App() {
         <div className='body-particles'>
           <div id='wrapper'>
             <NavigationBar />
-            <Switch>
+            <Routes>
               <Route path='/' exact component={Home} />
               <Route
                 path='/VideoConferencing'
@@ -62,11 +62,10 @@ function App() {
                 component={TelephoneSystems}
               />
               <Route path='/office/' exact component={TelephoneSystems} />
-            </Switch>
+            </Routes>
             <Footer />
           </div>
         </div>
-  
       </Router>
     </div>
   );
