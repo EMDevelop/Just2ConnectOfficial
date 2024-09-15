@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /private
-Allow: /
-Sitemap: https://www.just2connect.co.uk/sitemap.xml
