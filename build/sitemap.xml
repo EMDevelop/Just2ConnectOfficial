@@ -1,0 +1,69 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+      <loc>https://www.just2connect.co.uk/</loc>
+      <lastmod>2021-04-22</lastmod>
+      <changefreq>never</changefreq>
+      <priority>1</priority>
+   </url>
+
+   <url>
+      <loc>https://www.just2connect.co.uk/TelephoneSystems</loc>
+      <lastmod>2021-04-22</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>1</priority>
+   </url>
+
+   <url>
+      <loc>https://www.just2connect.co.uk/Broadband</loc>
+      <lastmod>2021-04-22</lastmod>
+       <changefreq>yearly</changefreq>
+      <priority>1</priority>
+   </url>
+
+   <url>
+      <loc>https://www.just2connect.co.uk/VideoConferencing</loc>
+      <lastmod>2021-04-22</lastmod>
+       <changefreq>never</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://www.just2connect.co.uk/MobileSIM</loc>
+      <lastmod>2021-04-22</lastmod>
+       <changefreq>yearly</changefreq>
+   </url>
+
+   <url>
+      <loc>https://www.just2connect.co.uk/VirtualPhoneNumbers</loc>
+      <lastmod>2021-04-22</lastmod>
+       <changefreq>yearly</changefreq>
+   </url>
+
+ 
+      <url>
+      <loc>https://www.just2connect.co.uk/SIPTrunks</loc>
+      <lastmod>2021-04-22</lastmod>
+       <changefreq>never</changefreq>
+   </url>
+      
+   <url>
+      <loc>https://www.just2connect.co.uk/About</loc>
+      <lastmod>2021-04-22</lastmod>
+       <changefreq>yearly</changefreq>
+   </url>
+      
+   <url>
+      <loc>https://www.just2connect.co.uk/Contact</loc>
+      <lastmod>2021-04-22</lastmod>
+       <changefreq>never</changefreq>
+      <priority>3</priority>
+   </url>
+      
+   <url>
+      <loc>https://www.just2connect.co.uk/Privacy</loc>
+      <lastmod>2021-04-22</lastmod>
+       <changefreq>yearly</changefreq>
+   </url>
+
+</urlset>
