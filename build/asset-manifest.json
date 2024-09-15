@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4f3c40d2.css",
-    "main.js": "/static/js/main.246dbb14.js",
+    "main.js": "/static/js/main.f777397f.js",
     "static/media/Just2Connect_Logo.png": "/static/media/Just2Connect_Logo.27b45853f82931dfd8c9.png",
     "static/media/grandstream.webp": "/static/media/grandstream.5e5b5ae44b3434ec53c1.webp",
     "static/media/Molly.jpg": "/static/media/Molly.155cddb3885930a2cd4f.jpg",
@@ -61,10 +61,10 @@
     "static/media/linkedinFooter.svg": "/static/media/linkedinFooter.974e0e88bb11f82cc17a6d5f7e6858f7.svg",
     "static/media/contactBlob.svg": "/static/media/contactBlob.28ca19897986c5de7d9d.svg",
     "main.4f3c40d2.css.map": "/static/css/main.4f3c40d2.css.map",
-    "main.246dbb14.js.map": "/static/js/main.246dbb14.js.map"
+    "main.f777397f.js.map": "/static/js/main.f777397f.js.map"
   },
   "entrypoints": [
     "static/css/main.4f3c40d2.css",
-    "static/js/main.246dbb14.js"
+    "static/js/main.f777397f.js"
   ]
 }

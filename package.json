@@ -9,21 +9,23 @@
     "bootstrap": "^5.3.3",
     "emailjs-com": "^3.2.0",
     "pathseg": "^1.2.1",
-    "react": "^18.2.0",
+    "react": "^17.0.0",
     "react-animated-css": "^1.2.1",
     "react-bootstrap": "^2.10.4",
-    "react-dom": "^18.2.0",
+    "react-dom": "^17.0.0",
     "react-elastic-carousel": "^0.11.5",
     "react-ga": "^3.3.1",
     "react-router-dom": "^6.26.2",
     "react-scripts": "^5.0.1",
-    "react-vertical-timeline-component": "^3.6.0"
+    "react-vertical-timeline-component": "^3.6.0",
+    "styled-components": "^6.1.13"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "vercel --prod"
   },
   "eslintConfig": {
     "extends": [
