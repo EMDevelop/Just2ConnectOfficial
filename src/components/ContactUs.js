@@ -23,7 +23,7 @@ function ContactUs() {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log("res: ", result.text);
         },
         (error) => {
           console.log(error.text);
@@ -39,47 +39,47 @@ function ContactUs() {
 
   return (
     <>
-      <div className="formContainer">
-        <h1 className="contactUs">Contact Us</h1>
+      <div className='formContainer'>
+        <h1 className='contactUs'>Contact Us</h1>
 
         <form onSubmit={sendEmail}>
-          <div className="formItem">
+          <div className='formItem'>
             <input
-              className="input"
-              type="text"
-              id="name"
+              className='input'
+              type='text'
+              id='name'
               required
-              placeholder="Your Name"
-              name="name"
+              placeholder='Your Name'
+              name='name'
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
           </div>
-          <div className="formItem">
+          <div className='formItem'>
             <input
-              className="input"
-              type="email"
-              id="email"
+              className='input'
+              type='email'
+              id='email'
               required
-              placeholder="Your Email"
-              name="email"
+              placeholder='Your Email'
+              name='email'
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
-          <div className="formItem">
+          <div className='formItem'>
             <textarea
-              className="textArea"
-              id="message"
+              className='textArea'
+              id='message'
               required
-              placeholder="Optional short message"
-              name="message"
+              placeholder='Optional short message'
+              name='message'
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
           </div>
 
-          <button className="submitButton" type="submit">
+          <button className='submitButton' type='submit'>
             {status}
           </button>
         </form>
