@@ -122,7 +122,7 @@ function Home() {
                 </h2>
               </div>
               <a className='learnMoreButton' href='/TelephoneSystems'>
-                <p className='learnMoreText'>Learn More</p>
+                <p className='learnMoreText'>Telephone Systems</p>
               </a>
             </div>
           </Grid>
@@ -148,7 +148,7 @@ function Home() {
                 </h2>
               </div>
               <a className='learnMoreButton' href='/Broadband'>
-                <p className='learnMoreText'>Learn More</p>
+                <p className='learnMoreText'>Broadband</p>
               </a>
             </div>
           </Grid>
@@ -173,7 +173,7 @@ function Home() {
                 </h2>
               </div>
               <a className='learnMoreButton' href='/VideoConferencing'>
-                <p className='learnMoreText'>Learn More</p>
+                <p className='learnMoreText'>Conferencing</p>
               </a>
             </div>
           </Grid>
@@ -199,7 +199,7 @@ function Home() {
                 </h2>
               </div>
               <a className='learnMoreButton' href='/MobileSIM'>
-                <p className='learnMoreText'>Learn More</p>
+                <p className='learnMoreText'>SIM Cards</p>
               </a>
             </div>
           </Grid>
