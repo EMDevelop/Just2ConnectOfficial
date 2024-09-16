@@ -267,8 +267,10 @@ body {
   display: flex;
   vertical-align: center;
   align-items: center;
-  height: 30px;
-  width: 120px;
+  justify-content: center;;
+  height: 40px;
+
+  width: 140px;
 }
 .learnMoreText{
   transform: translate(0,10px);
