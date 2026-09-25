@@ -1,10 +1,16 @@
 /* Hero */
+/*
+ * Sized so the header, the hero and the first row of the logo banner all land
+ * on the opening screen. The banner is the strongest proof on the page, so it
+ * should not need a scroll to be seen. The floor stops the hero collapsing on
+ * short laptop screens.
+ */
 .homeHero {
-  min-height: 80vh;
+  min-height: max(400px, calc(100vh - var(--headerHeight) - 200px));
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 40px 0 80px;
+  padding: 32px 0 48px;
 }
 
 /*
@@ -25,21 +31,28 @@
   padding: 0 5%;
 }
 
+/*
+ * Height-led rather than width-led, so on a short laptop the photo gives way
+ * and the logo banner still lands on the opening screen. Width follows the
+ * intrinsic aspect ratio.
+ */
 .homeHero__image {
-  width: 450px;
+  height: min(450px, calc(100vh - var(--headerHeight) - 275px));
+  width: auto;
   max-width: 100%;
-  height: auto;
 }
 
 @media screen and (min-width: 960px) and (max-width: 1200px) {
   .homeHero__image {
-    width: 400px;
+    height: min(400px, calc(100vh - var(--headerHeight) - 275px));
   }
 }
 
+/* The hero stacks below this, so there is no fold to protect. */
 @media screen and (max-width: 500px) {
   .homeHero__image {
     width: 300px;
+    height: auto;
   }
 }
 
@@ -159,11 +172,25 @@
   padding: 24px 0 48px;
 }
 
+/* Four services, so explicit column counts rather than an auto-fit that
+ * strands the fourth card on a row of its own. */
 .serviceCards {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 24px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 40px 24px;
+}
+
+@media screen and (min-width: 600px) {
+  .serviceCards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .serviceCards {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 .serviceCard {
@@ -303,8 +330,12 @@
 /* Why Just2Connect */
 .whySection {
   width: 80%;
-  /* Bottom margin keeps the panel off the stats strip that follows it. */
-  margin: 0 auto 80px;
+  /*
+   * The welcome panel above and the stats strip below both butt straight up
+   * against this one. Without the margins the two translucent panels and their
+   * shadows overlap along a single seam.
+   */
+  margin: 80px auto;
   background-color: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(1.5px);
   box-shadow: var(--shadowCard);
@@ -323,7 +354,8 @@
   color: var(--colourTextDark);
   text-align: center;
   letter-spacing: 1px;
-  padding: 80px 20px 20px;
+  /* The panel now has its own margin, so it does not need 80px of lead-in too. */
+  padding: 56px 20px 20px;
 }
 
 /*

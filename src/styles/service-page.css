@@ -130,33 +130,49 @@
   }
 }
 
+/*
+ * Two columns of left-aligned rows rather than a wide grid of centred cards.
+ * Each service has a different number of features, so the last row is often
+ * partial. A partial row of left-aligned rows reads as a normal list; a
+ * partial row of centred cards reads as a mistake.
+ */
 .featureGrid {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
-  max-width: 1400px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 32px 56px;
+  max-width: 1040px;
   margin: 0 auto;
   padding: 0 5%;
 }
 
+@media screen and (min-width: 820px) {
+  .featureGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .featureItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 8px;
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr);
+  column-gap: 16px;
+  align-items: start;
+  /* Without this the item stretches to the tallest in its row and pushes the
+   * description away from its own heading. */
+  align-content: start;
+  text-align: left;
 }
 
 .featureItem__icon {
-  width: 75px;
+  grid-row: 1 / span 2;
+  width: 26px;
   height: auto;
-  margin-bottom: 16px;
+  margin-top: 3px;
 }
 
 .featureItem__title {
-  color: var(--colourTextGrey);
-  font-size: 1.2rem;
+  color: var(--colourTextDark);
+  font-size: 1.125rem;
   font-weight: bold;
 }
 
@@ -164,8 +180,8 @@
   color: var(--colourTextGrey);
   font-size: 1rem;
   font-weight: normal;
-  padding-top: 12px;
-  max-width: 340px;
+  line-height: 1.6;
+  padding-top: 6px;
 }
 
 /* Broadband speed columns */
