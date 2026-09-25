@@ -7,6 +7,8 @@ import type { NextConfig } from "next";
  * lowercased source differs from the destination. Every pair below satisfies that:
  * the new slugs are hyphenated, the old ones were not.
  */
+const CANONICAL_ORIGIN = "https://www.just2connect.co.uk";
+
 const legacyRedirects = [
   { from: "/TelephoneSystems", to: "/telephone-systems" },
   { from: "/mobile-worker", to: "/telephone-systems" },
@@ -32,11 +34,30 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
   },
   async redirects() {
-    return legacyRedirects.map(({ from, to }) => ({
-      source: from,
-      destination: to,
-      permanent: true,
-    }));
+    return [
+      ...legacyRedirects.map(({ from, to }) => ({
+        source: from,
+        destination: to,
+        permanent: true,
+      })),
+      /*
+       * just2connect.com is a second alias on the same Vercel project, so it
+       * served a byte-identical copy of the site and split the search ranking
+       * between two domains. Sending it to the .co.uk in code keeps the rule
+       * next to the others rather than buried in a dashboard setting.
+       */
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host" as const,
+            value: "(?:www\\.)?just2connect\\.com",
+          },
+        ],
+        destination: `${CANONICAL_ORIGIN}/:path*`,
+        permanent: true,
+      },
+    ];
   },
 };
 
