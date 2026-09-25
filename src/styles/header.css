@@ -19,9 +19,21 @@
   flex-shrink: 0;
 }
 
+/*
+ * The source SVG was exported on an A4 artboard, so most of its canvas was
+ * empty and the wordmark rendered at roughly a third of its box. The viewBox
+ * is now cropped to the artwork, which means these heights are the real ink
+ * height of the logo.
+ */
 .siteHeader__logoImage {
-  height: 52px;
+  height: 40px;
   width: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .siteHeader__logoImage {
+    height: 50px;
+  }
 }
 
 .siteHeader__spacer {
