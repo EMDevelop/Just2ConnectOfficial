@@ -1,7 +1,8 @@
 import Image from "next/image";
 
 import { EnquirySection } from "@/components/EnquirySection";
-import { Timeline } from "@/components/Timeline";
+import { Credentials } from "@/components/Credentials";
+import { StatsStrip } from "@/components/StatsStrip";
 import { Col, Row } from "@/components/layout/Grid";
 import { people } from "@/content/people";
 import { buildPageMetadata } from "@/lib/metadata";
@@ -33,6 +34,10 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
+
+      <StatsStrip />
+
+      <Credentials />
 
       <section className="personSection" aria-labelledby="people-heading">
         <h2 id="people-heading" className="personSection__title">
@@ -66,8 +71,6 @@ export default function AboutPage() {
           </Row>
         ))}
       </section>
-
-      <Timeline />
 
       <EnquirySection heading="Want to talk to us?" />
     </>

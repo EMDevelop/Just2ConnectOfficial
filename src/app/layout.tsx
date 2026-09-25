@@ -18,6 +18,8 @@ import "@/styles/mobile-call-bar.css";
 import "@/styles/contact-form.css";
 import "@/styles/cookie-consent.css";
 import "@/styles/home.css";
+import "@/styles/logo-marquee.css";
+import "@/styles/credentials.css";
 import "@/styles/service-page.css";
 import "@/styles/contact.css";
 import "@/styles/about.css";

@@ -28,7 +28,7 @@ export function Testimonials() {
   return (
     <section className="testimonialSection" aria-labelledby="testimonials-heading">
       <h2 id="testimonials-heading" className="testimonialSection__title">
-        Trusted By
+        What our customers say
       </h2>
 
       <ul className="testimonialTrack">

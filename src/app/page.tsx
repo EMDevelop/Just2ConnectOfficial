@@ -3,6 +3,8 @@ import Link from "next/link";
 
 import { CallLink } from "@/components/CallLink";
 import { EnquirySection } from "@/components/EnquirySection";
+import { LogoMarquee } from "@/components/LogoMarquee";
+import { StatsStrip } from "@/components/StatsStrip";
 import { Testimonials } from "@/components/Testimonials";
 import { Col, Row } from "@/components/layout/Grid";
 import { business } from "@/content/business";
@@ -35,7 +37,7 @@ export default function HomePage() {
               We are your local provider in Herts, Beds and Bucks. Whether you
               need <strong>cloud-based telephony</strong>, a new number or{" "}
               <strong>business-strength broadband</strong>, we will provide the
-              right solution for your business, at a price you can afford — all
+              right solution for your business, at a price you can afford - all
               with exceptional service.
             </p>
             <div className="homeHero__actions">
@@ -61,6 +63,8 @@ export default function HomePage() {
           </Col>
         </Row>
       </section>
+
+      <LogoMarquee />
 
       <section className="servicesSection" aria-labelledby="services-heading">
         <h2 id="services-heading" className="servicesSection__title">
@@ -150,7 +154,7 @@ export default function HomePage() {
               <Link href="/contact-us" className="inlineLink">
                 Contact us
               </Link>{" "}
-              to find out more — we love to chat all things telephony and
+              to find out more- we love to chat all things telephony and
               broadband.
             </p>
           </Col>
@@ -177,6 +181,8 @@ export default function HomePage() {
           ))}
         </ul>
       </section>
+
+      <StatsStrip />
 
       <Testimonials />
 
