@@ -1,0 +1,224 @@
+.aboutHero {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8% 10%;
+  text-align: left;
+  color: var(--colourTextDark);
+}
+
+.aboutHero__text {
+  font-size: 1.5rem;
+  color: var(--colourTextGrey);
+  padding-top: 20px;
+  max-width: 900px;
+}
+
+.aboutHero__text strong {
+  color: var(--colourPop);
+}
+
+@media screen and (max-width: 550px) {
+  .aboutHero__text {
+    font-size: 1.1rem;
+  }
+}
+
+/* People */
+.personSection {
+  width: 75%;
+  margin: 0 auto 10%;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  box-shadow: var(--shadowCard);
+  border-radius: 5px;
+  padding-bottom: 5%;
+}
+
+@media screen and (max-width: 1100px) {
+  .personSection {
+    width: 88%;
+  }
+}
+
+.personSection__title {
+  font-size: 3rem;
+  text-align: center;
+  padding: 5% 20px 30px;
+  color: var(--colourTextDark);
+}
+
+@media screen and (max-width: 450px) {
+  .personSection__title {
+    font-size: 2rem;
+    padding-top: 20px;
+  }
+}
+
+.personPhotoWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px 20px;
+}
+
+.personPhoto {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border: 6px solid var(--colourPop);
+}
+
+@media screen and (max-width: 450px) {
+  .personPhoto {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.personDetails {
+  padding: 0 10%;
+}
+
+.personDetails__role {
+  letter-spacing: 3px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--colourPop);
+  text-transform: uppercase;
+}
+
+.personDetails__name {
+  color: var(--colourTextDark);
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding-bottom: 12px;
+}
+
+.personDetails__bio p + p {
+  padding-top: 16px;
+}
+
+/* Timeline */
+.timelineSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.timelineSection__title {
+  font-size: 3rem;
+  padding: 50px 20px 40px;
+  color: var(--colourTextDark);
+}
+
+@media screen and (max-width: 600px) {
+  .timelineSection__title {
+    font-size: 2.25rem;
+  }
+}
+
+/*
+ * Ordered list with a centre spine. Replaces react-vertical-timeline-component;
+ * semantic markup and no runtime dependency.
+ */
+.timeline {
+  list-style: none;
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 20px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 28px;
+  width: 4px;
+  background-color: rgba(31, 48, 109, 0.15);
+}
+
+@media screen and (min-width: 900px) {
+  .timeline::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.timeline__entry {
+  position: relative;
+  padding-left: 72px;
+  margin-bottom: 28px;
+}
+
+@media screen and (min-width: 900px) {
+  .timeline__entry {
+    width: 50%;
+    padding-left: 0;
+    padding-right: 48px;
+  }
+
+  .timeline__entry:nth-child(even) {
+    margin-left: 50%;
+    padding-right: 0;
+    padding-left: 48px;
+  }
+}
+
+.timeline__marker {
+  position: absolute;
+  left: 16px;
+  top: 18px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--colourPop);
+  border: 4px solid var(--colourBackLilac);
+}
+
+@media screen and (min-width: 900px) {
+  .timeline__marker {
+    left: auto;
+    right: -14px;
+  }
+
+  .timeline__entry:nth-child(even) .timeline__marker {
+    right: auto;
+    left: -14px;
+  }
+}
+
+.timeline__entry--highlighted .timeline__marker {
+  background-color: var(--colourTextDark);
+}
+
+.timeline__card {
+  background-color: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  padding: 20px 24px;
+  color: var(--colourTextGrey);
+}
+
+.timeline__entry--highlighted .timeline__card {
+  background-color: rgba(31, 48, 109, 0.85);
+  color: var(--colourBackWhite);
+}
+
+.timeline__year {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-bottom: 6px;
+  color: var(--colourTextDark);
+}
+
+.timeline__entry--highlighted .timeline__year {
+  color: var(--colourBackWhite);
+}

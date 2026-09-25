@@ -1,0 +1,434 @@
+/* Hero */
+.homeHero {
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 40px 0 80px;
+}
+
+/*
+ * The headline comes first in the DOM so a phone visitor reads it before
+ * scrolling past a large product photo. On desktop the photo moves back to
+ * the left-hand column.
+ */
+@media screen and (min-width: 960px) {
+  .homeHero__imageCol {
+    order: -1;
+  }
+}
+
+.homeHero__imageWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5%;
+}
+
+.homeHero__image {
+  width: 450px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+  .homeHero__image {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .homeHero__image {
+    width: 300px;
+  }
+}
+
+.homeHero__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5%;
+  color: var(--colourTextDark);
+}
+
+.homeHero__eyebrow {
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--colourPop);
+  padding-bottom: 16px;
+}
+
+.homeHero__title {
+  letter-spacing: 2px;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: normal;
+  line-height: 1.1;
+}
+
+.homeHero__description {
+  padding-top: 24px;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  color: var(--colourTextGrey);
+}
+
+.homeHero__description strong {
+  color: var(--colourTextDark);
+}
+
+.homeHero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 32px;
+}
+
+.buttonPrimary,
+.buttonSecondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+.buttonPrimary {
+  background-color: var(--colourPop);
+  color: var(--colourBackWhite);
+  border: 2px solid var(--colourPop);
+}
+
+.buttonPrimary:hover {
+  background-color: var(--colourBackWhite);
+  color: var(--colourPop);
+}
+
+.buttonSecondary {
+  background-color: transparent;
+  color: var(--colourPop);
+  border: 2px solid var(--colourPop);
+}
+
+.buttonSecondary:hover {
+  background-color: var(--colourPop);
+  color: var(--colourBackWhite);
+}
+
+@media screen and (max-width: 959px) {
+  .homeHero__text {
+    text-align: center;
+    align-items: center;
+    padding-top: 32px;
+  }
+
+  .homeHero__actions {
+    justify-content: center;
+  }
+
+  .homeHero__title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Services */
+.servicesSection {
+  width: 80%;
+  margin: 0 auto 10%;
+  padding: 0 5% 2%;
+  color: var(--colourTextGrey);
+}
+
+@media screen and (max-width: 768px) {
+  .servicesSection {
+    width: 92%;
+    padding: 0 2% 2%;
+  }
+}
+
+.servicesSection__title {
+  font-size: 2.25rem;
+  color: var(--colourTextDark);
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 24px 0 48px;
+}
+
+.serviceCards {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  padding: 16px;
+}
+
+.serviceCard__iconLink {
+  display: inline-flex;
+  position: relative;
+  top: 0;
+  transition: top ease 0.4s;
+}
+
+.serviceCard__iconLink:hover {
+  top: -10px;
+}
+
+.serviceCard__icon {
+  max-height: 80px;
+  width: auto;
+}
+
+.serviceCard__title {
+  font-size: 1.5rem;
+  color: var(--colourTextGrey);
+  padding-top: 8px;
+}
+
+.serviceCard__text {
+  font-size: 1rem;
+  color: var(--colourTextGrey);
+  font-weight: normal;
+  padding: 0 10%;
+  flex: 1;
+}
+
+.serviceCard__text strong {
+  color: var(--colourPop);
+  font-weight: bold;
+}
+
+.serviceCard__link {
+  color: var(--colourTextGrey);
+  font-size: 0.7rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(1px);
+  box-shadow: 0 0 5px 5px #cdd3e0;
+  transition: transform 200ms ease, color 200ms ease;
+}
+
+.serviceCard__link:hover {
+  transform: translateY(-5px);
+  color: var(--colourPop);
+}
+
+/* Welcome */
+.welcomeSection {
+  width: 100%;
+  box-shadow: var(--shadowCard);
+  background-color: rgba(255, 255, 255, 0.486);
+  backdrop-filter: blur(1px);
+  padding: 8% 0;
+}
+
+.welcomeSection__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 0 10%;
+}
+
+.welcomeSection__heading {
+  font-size: 2.2rem;
+  color: var(--colourTextDark);
+}
+
+.welcomeSection__subheading {
+  font-size: 1.6rem;
+  color: var(--colourTextDark);
+  padding-top: 16px;
+}
+
+.welcomeSection__paragraph {
+  font-size: 1.25rem;
+  color: var(--colourTextGrey);
+  padding-top: 20px;
+}
+
+.welcomeSection__paragraph strong {
+  color: var(--colourPop);
+}
+
+.welcomeSection__imageWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 10%;
+}
+
+.welcomeSection__image {
+  max-width: 100%;
+  height: auto;
+}
+
+.inlineLink {
+  color: var(--colourPop);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .welcomeSection__heading {
+    font-size: 1.8rem;
+  }
+
+  .welcomeSection__subheading {
+    font-size: 1.3rem;
+  }
+
+  .welcomeSection__paragraph {
+    font-size: 1.1rem;
+  }
+}
+
+/* Why Just2Connect */
+.whySection {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(1.5px);
+  box-shadow: var(--shadowCard);
+  border-radius: 5px;
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .whySection {
+    width: 92%;
+  }
+}
+
+.whySection__title {
+  font-size: 2.25rem;
+  color: var(--colourTextDark);
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 80px 20px 20px;
+}
+
+.benefitGrid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 0 5%;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px 8px;
+}
+
+.benefit__image {
+  max-height: 180px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.benefit__title {
+  font-size: 1.75rem;
+  color: var(--colourTextGrey);
+  letter-spacing: 0.5px;
+}
+
+.benefit__text {
+  font-size: 1.25rem;
+  color: var(--colourTextGrey);
+  padding: 12px 25px 0;
+}
+
+/* Testimonials */
+.testimonialSection {
+  padding-bottom: 80px;
+}
+
+.testimonialSection__title {
+  font-size: 2.25rem;
+  color: var(--colourTextDark);
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 80px 20px 20px;
+}
+
+/*
+ * Scroll-snap carousel. Replaces react-elastic-carousel: no JavaScript, and it
+ * keeps native keyboard and touch scrolling.
+ */
+.testimonialTrack {
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(300px, 420px);
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 20px 5% 32px;
+  scrollbar-width: thin;
+}
+
+.testimonial {
+  scroll-snap-align: center;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(1.5px);
+  border-radius: 20px;
+  box-shadow: var(--shadowCard);
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.testimonial__stars {
+  height: 30px;
+  width: auto;
+}
+
+.testimonial__quote {
+  color: var(--colourTextDark);
+  font-size: 1.25rem;
+  font-style: italic;
+  flex: 1;
+}
+
+.testimonial__quote mark {
+  background: none;
+  color: var(--colourPop);
+  font-style: italic;
+}
+
+.testimonial__attribution {
+  font-style: normal;
+}
+
+.testimonial__name {
+  color: var(--colourTextDark);
+  font-weight: bold;
+}
+
+.testimonial__company {
+  color: var(--colourTextGrey);
+}

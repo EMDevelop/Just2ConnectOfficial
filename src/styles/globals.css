@@ -1,0 +1,116 @@
+:root {
+  /*
+   * Darkened from the old #e51a94, which only reached 4.27:1 against white and
+   * failed WCAG AA everywhere it was used at body size. This clears 4.5:1
+   * against white and all three lilac backgrounds.
+   */
+  --colourPop: #c2137e;
+  --colourTextGrey: #3e4a56;
+  --colourTextDark: #1f306d;
+  --colourBackLilac: #e0e8fa;
+  --colourBackGrey: #f5f7fd;
+  --colourBackWhite: #ffffff;
+  --shadowCard: 1px 1px 13px 10px #d6def0;
+  --headerHeight: 84px;
+  --callBarHeight: 64px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: var(--colourBackLilac);
+  color: var(--colourTextGrey);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* The fixed call bar only exists below 768px, so only reserve space there. */
+@media screen and (max-width: 767px) {
+  body {
+    padding-bottom: var(--callBarHeight);
+  }
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--colourPop);
+  outline-offset: 2px;
+}
+
+.skipLink {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  padding: 12px 20px;
+  background: var(--colourBackWhite);
+  color: var(--colourTextDark);
+  font-weight: bold;
+}
+
+.skipLink:focus {
+  left: 0;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Shared surface used by most content blocks. */
+.panel {
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(1.5px);
+  box-shadow: var(--shadowCard);
+  border-radius: 5px;
+}
+
+.sectionSpacer {
+  height: 150px;
+}
+
+.pageHeading {
+  font-size: 3.5rem;
+  color: var(--colourTextDark);
+  line-height: 1.15;
+}
+
+@media screen and (max-width: 550px) {
+  .pageHeading {
+    font-size: 2.5rem;
+  }
+}

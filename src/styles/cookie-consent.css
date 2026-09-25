@@ -1,0 +1,54 @@
+.cookieConsent {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  z-index: 50;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  background-color: var(--colourBackWhite);
+  border: 2px solid var(--colourBackLilac);
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(31, 48, 109, 0.18);
+}
+
+/* Sit above the mobile call bar rather than behind it. */
+@media screen and (max-width: 767px) {
+  .cookieConsent {
+    bottom: calc(var(--callBarHeight) + 16px);
+  }
+}
+
+.cookieConsent__text {
+  font-size: 0.95rem;
+  color: var(--colourTextGrey);
+}
+
+.cookieConsent__link {
+  color: var(--colourPop);
+}
+
+.cookieConsent__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 16px;
+}
+
+.cookieConsent__button {
+  padding: 10px 22px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 2px solid var(--colourPop);
+}
+
+.cookieConsent__button--accept {
+  background-color: var(--colourPop);
+  color: var(--colourBackWhite);
+}
+
+.cookieConsent__button--reject {
+  background-color: var(--colourBackWhite);
+  color: var(--colourPop);
+}

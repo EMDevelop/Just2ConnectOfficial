@@ -1,0 +1,57 @@
+/*
+ * Persistent tap-to-call bar. Phone visitors previously had no visible way to
+ * call: the only `tel:` link lived inside the collapsed menu, and the enquiry
+ * form sat roughly nine screens down the home page.
+ */
+.mobileCallBar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  padding: 8px 12px;
+  min-height: var(--callBarHeight);
+  background-color: var(--colourBackWhite);
+  border-top: 2px solid var(--colourBackLilac);
+  box-shadow: 0 -4px 16px rgba(31, 48, 109, 0.12);
+  padding-bottom: max(8px, env(safe-area-inset-bottom));
+}
+
+@media screen and (min-width: 768px) {
+  .mobileCallBar {
+    display: none;
+  }
+}
+
+.mobileCallBar__action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.mobileCallBar__action--call {
+  background-color: var(--colourPop);
+  color: var(--colourBackWhite);
+}
+
+.mobileCallBar__action--quote {
+  background-color: var(--colourBackWhite);
+  color: var(--colourPop);
+  border: 2px solid var(--colourPop);
+}
+
+.mobileCallBar__icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}

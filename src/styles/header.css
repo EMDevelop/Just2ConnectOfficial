@@ -1,0 +1,235 @@
+.siteHeader {
+  background-color: var(--colourBackWhite);
+  box-shadow: 1px 1px 13px 10px #d6def0;
+  position: relative;
+  z-index: 30;
+}
+
+.siteHeader__bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 20px;
+  min-height: var(--headerHeight);
+}
+
+.siteHeader__logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.siteHeader__logoImage {
+  height: 52px;
+  width: auto;
+}
+
+.siteHeader__spacer {
+  flex: 1;
+}
+
+/* Desktop navigation */
+.siteNav {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .siteNav {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}
+
+.siteNav__list {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+}
+
+.siteNav__link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--colourTextGrey);
+  background: none;
+  border: none;
+}
+
+.siteNav__link:hover,
+.siteNav__link[aria-current="page"] {
+  color: var(--colourPop);
+}
+
+.siteNav__link::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  bottom: 4px;
+  width: 0;
+  height: 3px;
+  background-color: var(--colourPop);
+  transition: width 0.35s ease;
+}
+
+.siteNav__link:hover::after,
+.siteNav__link[aria-current="page"]::after {
+  width: calc(100% - 32px);
+}
+
+/* Dropdown */
+.siteNav__dropdown {
+  position: relative;
+}
+
+.siteNav__dropdownToggle {
+  gap: 6px;
+}
+
+.siteNav__chevron {
+  transition: transform 0.2s ease;
+}
+
+.siteNav__dropdownToggle[aria-expanded="true"] .siteNav__chevron {
+  transform: rotate(180deg);
+}
+
+.siteNav__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 240px;
+  list-style: none;
+  background-color: var(--colourBackWhite);
+  border: 2px solid var(--colourBackLilac);
+  border-radius: 8px;
+  padding: 8px 0;
+  box-shadow: 0 8px 24px rgba(31, 48, 109, 0.12);
+}
+
+.siteNav__menuLink {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--colourTextGrey);
+  font-weight: 600;
+}
+
+.siteNav__menuLink:hover {
+  color: var(--colourPop);
+}
+
+/*
+ * Call to action. Always rendered, at every width — the previous build hid this
+ * inside the collapsed mobile menu, which left phone visitors with no way to call.
+ */
+.headerCall {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  padding: 10px 18px;
+  border: 2px solid var(--colourPop);
+  border-radius: 10px;
+  background-color: var(--colourBackWhite);
+  color: var(--colourPop);
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.headerCall:hover {
+  background-color: var(--colourPop);
+  color: var(--colourBackWhite);
+}
+
+.headerCall__icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+/* On the narrowest screens show the icon alone to protect the layout. */
+@media screen and (max-width: 420px) {
+  .headerCall__label {
+    display: none;
+  }
+
+  .headerCall {
+    padding: 10px 12px;
+  }
+}
+
+/* Burger */
+.siteHeader__burger {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  border: 2px solid var(--colourBackLilac);
+  border-radius: 8px;
+  background-color: var(--colourBackWhite);
+  flex-shrink: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .siteHeader__burger {
+    display: none;
+  }
+}
+
+.siteHeader__burgerLine {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: var(--colourTextDark);
+  border-radius: 2px;
+}
+
+/* Mobile panel */
+.mobileNav {
+  border-top: 2px solid var(--colourBackLilac);
+  padding: 8px 20px 20px;
+}
+
+@media screen and (min-width: 992px) {
+  .mobileNav {
+    display: none;
+  }
+}
+
+.mobileNav__list {
+  list-style: none;
+}
+
+.mobileNav__link {
+  display: block;
+  padding: 14px 4px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--colourTextGrey);
+  border-bottom: 1px solid var(--colourBackLilac);
+}
+
+.mobileNav__link:hover,
+.mobileNav__link[aria-current="page"] {
+  color: var(--colourPop);
+}
+
+.mobileNav__groupLabel {
+  display: block;
+  padding: 18px 4px 6px;
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--colourPop);
+  font-weight: bold;
+}

@@ -1,0 +1,57 @@
+/*
+ * 12-column grid replacing Material UI's `Grid`. Breakpoints match the ones the
+ * previous build used: sm 600px, md 960px, lg 1280px.
+ *
+ * A column's span is read from CSS custom properties rather than generated
+ * classes. Each breakpoint falls back through the smaller ones, so
+ * `<Col xs={12} md={6} />` behaves the same as the Material UI original.
+ */
+.j2cRow {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  width: 100%;
+  align-items: center;
+}
+
+.j2cRow--alignStart {
+  align-items: start;
+}
+
+.j2cRow--gap {
+  gap: 24px;
+}
+
+.j2cCol {
+  min-width: 0;
+  grid-column: span var(--col-xs, 12);
+}
+
+@media screen and (min-width: 600px) {
+  .j2cCol {
+    grid-column: span var(--col-sm, var(--col-xs, 12));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .j2cCol {
+    grid-column: span var(--col-md, var(--col-sm, var(--col-xs, 12)));
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .j2cCol {
+    grid-column: span
+      var(--col-lg, var(--col-md, var(--col-sm, var(--col-xs, 12))));
+  }
+}
+
+/* Hides a column entirely below the md breakpoint. */
+.j2cCol--hideBelowMd {
+  display: none;
+}
+
+@media screen and (min-width: 960px) {
+  .j2cCol--hideBelowMd {
+    display: block;
+  }
+}

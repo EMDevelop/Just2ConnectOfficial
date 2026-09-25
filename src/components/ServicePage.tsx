@@ -1,0 +1,82 @@
+import Image from "next/image";
+import type { ReactNode } from "react";
+
+import { EnquirySection } from "@/components/EnquirySection";
+import { Faq } from "@/components/Faq";
+import { FeatureGrid } from "@/components/FeatureGrid";
+import { Col, Row } from "@/components/layout/Grid";
+import nutshellIcon from "@/images/ProductPage/PinkNutshell.svg";
+import type { ServiceContent } from "@/types/service-content";
+
+export interface ServicePageProps {
+  readonly service: ServiceContent;
+  /** Extra sections rendered between the features and the FAQ. */
+  readonly children?: ReactNode;
+}
+
+export function ServicePage({ service, children }: ServicePageProps) {
+  const isSvgHero = service.heroImage.src.endsWith(".svg");
+
+  return (
+    <>
+      <section className="serviceHero">
+        <Row>
+          <Col xs={12} md={7} className="serviceHero__text">
+            <h1 className="serviceHero__title">{service.heading}</h1>
+            <p className="serviceHero__strapline">
+              {service.strapline.map((fragment, index) => (
+                <span key={fragment}>
+                  {index > 0 ? (
+                    <span className="serviceHero__separator" aria-hidden="true">
+                      |
+                    </span>
+                  ) : null}
+                  {fragment}
+                </span>
+              ))}
+            </p>
+          </Col>
+
+          <Col xs={12} md={5}>
+            <div className="serviceHero__imageWrap">
+              <Image
+                src={service.heroImage}
+                alt={service.heroImageAlt}
+                className="serviceHero__image"
+                unoptimized={isSvgHero}
+                preload
+              />
+            </div>
+          </Col>
+        </Row>
+      </section>
+
+      <section className="nutshell panel" aria-labelledby="nutshell-heading">
+        <Image
+          src={nutshellIcon}
+          alt=""
+          className="nutshell__icon"
+          unoptimized
+        />
+        <h2 id="nutshell-heading" className="nutshell__heading">
+          In a nutshell...
+        </h2>
+        {service.nutshell.map((paragraph) => (
+          <p key={paragraph} className="nutshell__text">
+            {paragraph}
+          </p>
+        ))}
+      </section>
+
+      <FeatureGrid features={service.features} />
+
+      {children}
+
+      <Faq items={service.faqs} />
+
+      <EnquirySection
+        heading={`Interested in ${service.heading.toLowerCase()}?`}
+      />
+    </>
+  );
+}
