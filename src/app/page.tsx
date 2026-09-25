@@ -3,6 +3,8 @@ import Link from "next/link";
 
 import { CallLink } from "@/components/CallLink";
 import { EnquirySection } from "@/components/EnquirySection";
+import { LogoMarquee } from "@/components/LogoMarquee";
+import { StatsStrip } from "@/components/StatsStrip";
 import { Testimonials } from "@/components/Testimonials";
 import { Col, Row } from "@/components/layout/Grid";
 import { business } from "@/content/business";
@@ -61,6 +63,8 @@ export default function HomePage() {
           </Col>
         </Row>
       </section>
+
+      <LogoMarquee />
 
       <section className="servicesSection" aria-labelledby="services-heading">
         <h2 id="services-heading" className="servicesSection__title">
@@ -177,6 +181,8 @@ export default function HomePage() {
           ))}
         </ul>
       </section>
+
+      <StatsStrip />
 
       <Testimonials />
 

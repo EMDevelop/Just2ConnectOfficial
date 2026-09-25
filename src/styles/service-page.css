@@ -84,12 +84,6 @@
   color: var(--colourTextGrey);
 }
 
-.nutshell__icon {
-  width: 120px;
-  height: auto;
-  margin-bottom: 24px;
-}
-
 .nutshell__heading {
   font-size: 3rem;
   color: var(--colourTextDark);
