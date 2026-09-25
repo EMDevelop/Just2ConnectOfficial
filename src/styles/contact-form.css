@@ -48,9 +48,9 @@
   font-size: 1.125rem;
   padding: 14px 20px;
   color: var(--colourTextDark);
-  border: 2px solid transparent;
-  background-color: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(5px);
+  /* A visible border, so the fields still read as fields on a pale panel. */
+  border: 2px solid var(--colourBackLilac);
+  background-color: var(--colourBackWhite);
 }
 
 .enquiryForm__input {

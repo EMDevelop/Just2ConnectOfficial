@@ -311,20 +311,15 @@
 }
 
 /* Closing enquiry block, shared by every service page. */
+/*
+ * No decorative blob behind the form. It was a dark navy shape, and the form's
+ * labels are dark navy too, so every field label was invisible against it.
+ */
 .enquirySection {
   width: 100%;
   padding: 60px 20px 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/images/contact-blob.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-@media screen and (max-width: 700px) {
-  .enquirySection {
-    background-image: none;
-  }
+  background-color: var(--colourBackGrey);
 }
