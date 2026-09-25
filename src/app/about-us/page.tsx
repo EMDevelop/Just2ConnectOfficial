@@ -10,7 +10,7 @@ import { buildPageMetadata } from "@/lib/metadata";
 export const metadata = buildPageMetadata({
   title: "About Us",
   description:
-    "Just2Connect has provided telecoms and broadband to businesses across Hertfordshire, Bedfordshire and Buckinghamshire since 2009. Meet the team and read our history.",
+    "Just2Connect has provided telecoms and broadband to businesses across Hertfordshire, Bedfordshire and Buckinghamshire since 2009. Chamber of Commerce member, backed by tier-one networks.",
   path: "/about-us",
 });
 
