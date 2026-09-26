@@ -36,8 +36,8 @@ export function LogoMarquee() {
   return (
     <section className="logoMarquee" aria-labelledby="logo-marquee-heading">
       <h2 id="logo-marquee-heading" className="logoMarquee__heading">
-        Trusted by {clientLogos.length}+ businesses across Hertfordshire,
-        Bedfordshire and Buckinghamshire
+        Trusted by businesses across Hertfordshire, Bedfordshire and
+        Buckinghamshire
       </h2>
 
       <div className="logoMarquee__viewport">

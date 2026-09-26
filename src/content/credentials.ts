@@ -1,5 +1,4 @@
 import { business } from "@/content/business";
-import { clientLogos } from "@/content/clients";
 
 export interface Stat {
   readonly value: string;
@@ -14,7 +13,11 @@ function yearsTrading(): number {
 export function stats(): readonly Stat[] {
   return [
     { value: `${yearsTrading()} years`, label: "Supporting business telecoms" },
-    { value: `${clientLogos.length}+`, label: "Businesses we look after" },
+    /*
+     * Deliberately no customer count here. A precise figure invites a
+     * comparison with national resellers, which is a comparison we lose.
+     */
+    { value: "Tier one", label: "Carrier networks behind us" },
     { value: "3 counties", label: "Herts, Beds and Bucks" },
     { value: "30 days", label: "Contract on most services" },
   ];
